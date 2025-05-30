@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (sheetSubmissionSuccess) {
             Swal.fire({
                 icon: 'success', title: 'Pengajuan Terkirim!',
-                text: 'Data Anda telah berhasil dikirim. Anda akan diarahkan ke WhatsApp.',
+                text: 'Data Anda telah berhasil dikirim.',
                 timer: 2000, timerProgressBar: true, showConfirmButton: false
             }).then(() => {
                 redirectToWhatsAppAndThankYou(); // Modified function name
