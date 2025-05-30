@@ -1,0 +1,565 @@
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Default text color */
+}
+
+/* BFI Color Palette */
+:root {
+    --bfi-primary: #004a99; /* BFI Blue */
+    --bfi-secondary: #0056b3; /* Slightly lighter blue for accents or nav */
+    --bfi-orange: #f7941d; /* BFI Orange */
+    --bfi-light-blue: #e9f4ff; /* Light blue background */
+    --bfi-dark-text: #212529;
+    --bfi-light-text: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bfi-primary); /* Headings in BFI Blue */
+    font-weight: 600; /* Semi-bold for headings */
+}
+
+.text-bfi-primary { color: var(--bfi-primary) !important; }
+.text-bfi-secondary { color: var(--bfi-secondary) !important; }
+.text-bfi-orange { color: var(--bfi-orange) !important; }
+
+.bg-bfi-primary { background-color: var(--bfi-primary) !important; }
+.bg-bfi-secondary { background-color: var(--bfi-secondary) !important; }
+.bg-bfi-orange { background-color: var(--bfi-orange) !important; }
+.bg-light-blue { background-color: var(--bfi-light-blue) !important; }
+.bg-bfi-primary-transparent { background-color: rgba(0, 74, 153, 0.85) !important; }
+
+
+.btn-bfi-primary {
+    background-color: var(--bfi-primary);
+    border-color: var(--bfi-primary);
+    color: white;
+}
+.btn-bfi-primary:hover, .btn-bfi-primary:focus {
+    background-color: #003a7a; /* Darker shade for hover */
+    border-color: #003a7a;
+    color: white;
+}
+
+.btn-bfi-secondary { /* This was the "Masuk" button style */
+    background-color: var(--bfi-orange);
+    border-color: var(--bfi-orange);
+    color: white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.btn-bfi-secondary:hover, .btn-bfi-secondary:focus {
+    background-color: #e0800d; /* Darker orange */
+    border-color: #e0800d;
+    color: white;
+}
+
+
+.btn-bfi-orange {
+    background-color: var(--bfi-orange);
+    border-color: var(--bfi-orange);
+    color: white;
+}
+.btn-bfi-orange:hover, .btn-bfi-orange:focus {
+    background-color: #e0800d; /* Darker shade for hover */
+    border-color: #e0800d;
+    color: white;
+}
+
+.btn-outline-bfi-primary {
+    color: var(--bfi-primary);
+    border-color: var(--bfi-primary);
+}
+.btn-outline-bfi-primary:hover, .btn-outline-bfi-primary:focus {
+    background-color: var(--bfi-primary);
+    color: white;
+}
+
+/* Header */
+.top-bar a:hover {
+    color: white !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+}
+.navbar-dark .dropdown-menu {
+    background-color: var(--bfi-secondary);
+    border: none;
+}
+.navbar-dark .dropdown-item {
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar-dark .dropdown-item:hover,
+.navbar-dark .dropdown-item:focus {
+    color: white;
+    background-color: var(--bfi-primary);
+}
+
+
+/* Hero Section */
+#hero h1 {
+    font-size: 2.8rem; /* Adjust as needed */
+}
+#hero .lead {
+    color: #555;
+}
+#hero ul li i {
+    font-size: 1.2em;
+    position: relative;
+    top: 2px;
+}
+
+/* style.css */
+/* ... (your existing BFI color palette, global styles, etc.) ... */
+
+/* Hero Section with Custom Background */
+.hero-section-custom-bg {
+    background-image: url('https://www.bfi.co.id/static/images/hero-section-revamp-blue-3.webp');
+    background-repeat: no-repeat;
+    background-position: center center; /* Or adjust as needed, e.g., center right, top center */
+    background-size: cover; /* This will ensure the image covers the section, might crop some parts */
+    /* Alternative background-size options:
+       background-size: contain; (Fits entire image, might leave empty space)
+       background-size: 100% auto; (Full width, auto height)
+    */
+    position: relative; /* For potential pseudo-elements or absolute positioned children if needed */
+    /* color: white; /* Set default text color for this section if not using .text-white class */
+}
+
+/* If the background image is dark and you need to ensure text contrast */
+.hero-section-custom-bg .hero-content h1,
+.hero-section-custom-bg .hero-content p,
+.hero-section-custom-bg .hero-content ul li span {
+    color: white; /* Overrides default heading/paragraph colors if they were dark */
+}
+.hero-section-custom-bg .hero-content .small {
+    color: rgba(255, 255, 255, 0.8); /* Lighter for subheading */
+}
+
+/* Special orange for hero text to stand out on the blue background if needed */
+.text-bfi-orange-hero {
+    color: var(--bfi-orange) !important; /* Or choose a slightly brighter/different orange if needed for contrast */
+}
+
+/* Adjusting button outline for light text on dark background */
+.hero-section-custom-bg .btn-outline-light {
+    color: white;
+    border-color: white;
+}
+.hero-section-custom-bg .btn-outline-light:hover,
+.hero-section-custom-bg .btn-outline-light:focus {
+    background-color: white;
+    color: var(--bfi-primary); /* Text color on hover */
+}
+
+/* Give hero content some padding, especially on smaller screens */
+.hero-section-custom-bg .hero-content {
+    padding: 2rem 0; /* Add vertical padding */
+    z-index: 1; /* Ensure content is above any pseudo-element overlays */
+}
+
+/* Optional: Add a subtle dark overlay to improve text readability if the background is too busy */
+/*
+.hero-section-custom-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); // Adjust opacity (0.3 = 30% black)
+    z-index: 0;
+}
+*/
+
+/* Adjust column widths and alignment for hero */
+.hero-section-custom-bg .row {
+    /* min-height: 75vh; /* Ensure section has enough height, can also use padding on section */
+    /* Consider using padding on the .hero-section-custom-bg itself for height */
+}
+
+@media (max-width: 991.98px) { /* lg breakpoint */
+    .hero-section-custom-bg {
+        background-position: center center; /* May need to adjust for mobile */
+        text-align: center; /* Center text on smaller screens */
+    }
+    .hero-section-custom-bg .hero-content ul {
+        justify-content: center; /* Center list items if they are flex */
+    }
+     .hero-section-custom-bg .hero-content ul li {
+        justify-content: center; /* If li itself is flex */
+    }
+     .hero-section-custom-bg .hero-content .btn {
+        width: auto; /* Allow buttons to size naturally or set specific width */
+        display: inline-block; /* If they become block due to other styles */
+    }
+}
+
+
+/* ... (rest of your CSS) ... */
+
+/* Promo Card in Carousel */
+.promo-card {
+    min-height: 450px; /* Ensure consistent height for carousel items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.promo-card .fs-1 {
+    line-height: 1;
+}
+.promo-card .fs-1 span {
+    font-weight: normal;
+}
+
+/* "Kenapa BFI" Section Cards */
+#kenapa-bfi .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#kenapa-bfi .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+#kenapa-bfi .card img {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* Kalkulator Section */
+#kalkulator-angsuran label {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+#kalkulator-angsuran .form-label { /* Ensure labels above sliders are clear */
+    margin-bottom: 0.25rem;
+    color: white; /* Explicitly set label color as section background is dark */
+}
+
+#kalkulator-angsuran .form-range {
+    width: 100%;
+    /* You can add custom styling for the slider track and thumb here if desired,
+       though Bootstrap's defaults are decent.
+       Example:
+       --bs-thumb-bg: var(--bfi-orange);
+       --bs-track-bg: #ccc; (This would need more specific targeting)
+    */
+}
+
+/* Styling for the dynamic value display next to slider labels */
+#kalkulator-angsuran #loanAmountValueDisplay,
+#kalkulator-angsuran #loanTenorValueDisplay {
+    color: var(--bfi-orange); /* Make displayed value stand out */
+    font-weight: 700; /* Bolder */
+}
+
+/* Styling for the help text under the loan amount slider */
+#kalkulator-angsuran #loanAmountHelp {
+    font-size: 0.8em; /* Make help text a bit smaller */
+    display: block; /* Ensure it takes its own line */
+    margin-top: 0.25rem;
+    color: rgba(255, 255, 255, 0.75); /* Ensure visibility on dark background */
+}
+
+/* Styling for the calculator result table */
+#kalkulator-angsuran #calculatorResult .card {
+    background-color: rgba(255, 255, 255, 0.95) !important; /* Slightly more opaque white card for results */
+    color: var(--bfi-dark-text);
+    border: none; /* Remove card border if any */
+}
+
+#kalkulator-angsuran #calculatorResult .table th {
+    color: var(--bfi-primary); /* Table headers in BFI blue */
+    font-weight: 600;
+}
+#kalkulator-angsuran #calculatorResult .table td {
+    color: var(--bfi-dark-text); /* Standard dark text for table data */
+}
+
+/* Styling for the highlighted orange row in the result table */
+#kalkulator-angsuran #calculatorResult .table-bfi-orange th,
+#kalkulator-angsuran #calculatorResult .table-bfi-orange td {
+    background-color: var(--bfi-orange);
+    color: white !important; /* Ensure text is white on orange background */
+    border-color: var(--bfi-orange);
+}
+#kalkulator-angsuran #calculatorResult .table-bfi-orange th {
+    font-weight: 700; /* Make header in orange row bolder */
+}
+
+.table-bfi-orange th:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.table-bfi-orange td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Styling for the error/info message box */
+#kalkulator-angsuran #calculatorError.alert-warning { /* Or alert-danger */
+    background-color: #fff3cd; /* Bootstrap warning yellow */
+    border-color: #ffeeba;
+    color: #856404;
+}
+#kalkulator-angsuran #calculatorError.alert-danger {
+    background-color: #f8d7da; /* Bootstrap danger red */
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Accordion Customization */
+.accordion-button {
+    background-color: #f8f9fa;
+    color: var(--bfi-primary);
+    font-weight: 500;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bfi-primary);
+    background-color: var(--bfi-light-blue);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 74, 153, 0.25); /* BFI Primary focus color */
+}
+.accordion-button::after { /* Customize Bootstrap icon if needed */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23004a99'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23004a99'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+     transform: rotate(-180deg);
+}
+
+/* Testimonial Carousel */
+
+/* style.css */
+/* ... (your existing BFI color palette, global styles, etc.) ... */
+
+/* Testimonials Section using Bootstrap Carousel */
+#testimonials .testimonial-card-bs { /* Custom class for BS card in this section */
+    overflow: hidden;
+    background-color: #fff; /* Ensure card background */
+}
+
+#testimonials .testimonial-video-thumb-wrapper {
+    position: relative; /* Crucial for child's absolute positioning */
+    cursor: pointer;
+    background-color: #000; /* Fallback if image doesn't load */
+}
+
+#testimonials .testimonial-video-thumb-wrapper img.img-fluid {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    object-fit: cover;
+}
+
+#testimonials .testimonial-video-thumb-wrapper:hover img.img-fluid {
+    transform: scale(1.05);
+    opacity: 0.7; /* Dim the thumbnail on hover */
+}
+
+#testimonials .play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* So click goes through to the wrapper */
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    display: inline-block; /* Or flex for more control */
+}
+
+#testimonials .testimonial-video-thumb-wrapper:hover .play-button-overlay {
+    opacity: 1; /* Make play button fully visible on hover */
+}
+
+#testimonials .play-button-overlay img {
+    display: block;
+    width: 60px; /* Adjust size of your play button image */
+    height: auto;
+    max-width: 100%;
+}
+
+/* Testimonial Modal Styling */
+#testimonialVideoModal .modal-content {
+    border: none;
+    background-color: #000;
+    border-radius: 0.5rem;
+}
+#testimonialVideoModal .modal-header {
+    padding: 0.5rem 1rem;
+    border-bottom: none;
+}
+#testimonialVideoModal .btn-close-white {
+    filter: invert(0) grayscale(100%) brightness(200%);
+}
+#testimonialVideoModal .modal-body {
+    padding: 0;
+}
+#testimonialVideoModal .ratio iframe {
+   border-radius: 0 0 0.5rem 0.5rem; /* If modal content has rounded bottom corners */
+}
+
+
+/* Bootstrap Carousel Indicators styling (if you want to customize) */
+#testimonialBootstrapCarousel .carousel-indicators [data-bs-target] {
+    background-color: #adb5bd;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 4px;
+    opacity: 0.7;
+    border: none;
+}
+#testimonialBootstrapCarousel .carousel-indicators .active {
+    background-color: var(--bfi-orange); /* Use your theme color */
+    opacity: 1;
+}
+
+/* Bootstrap Carousel Controls (prev/next arrows) - optional styling */
+#testimonialBootstrapCarousel .carousel-control-prev-icon,
+#testimonialBootstrapCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3); /* Make them slightly more visible */
+    border-radius: 50%;
+    padding: 10px; /* Adjust padding to make the clickable area larger/smaller */
+    background-size: 50% 50%; /* Make the arrow icon itself smaller within the bg */
+}
+#testimonialBootstrapCarousel .carousel-control-prev-icon:hover,
+#testimonialBootstrapCarousel .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure blockquote text is a good size and color */
+#testimonials .blockquote p {
+    color: #333; /* Or your preferred text color */
+    font-size: 1.05rem; /* Adjust as needed */
+}
+#testimonials .blockquote-footer {
+    color: #555;
+}
+#testimonials .blockquote-footer strong {
+    color: var(--bfi-primary);
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--bfi-orange) !important;
+    text-decoration: underline;
+}
+footer .social-icons a i {
+    transition: color 0.3s ease;
+}
+footer .social-icons a:hover i {
+    color: var(--bfi-orange) !important;
+}
+
+/* Back to top button */
+#backToTopBtn {
+    padding: 0.5rem 0.8rem;
+}
+
+#kenapa-bfi .kenapa-bfi-carousel-wrapper .carousel-item {
+    padding-bottom: 2rem; /* Space for indicators */
+}
+
+#kenapa-bfi .kenapa-bfi-carousel-wrapper .kenapa-bfi-card-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#kenapa-bfi .kenapa-bfi-carousel-wrapper .card {
+    margin-bottom: 0;
+}
+
+#kenapa-bfi .carousel-indicators {
+    bottom: 0px;
+    margin-bottom: 0.5rem;
+}
+#kenapa-bfi .carousel-indicators [data-bs-target] {
+    background-color: #cccccc;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-top: 0;
+    border-bottom: 0;
+}
+#kenapa-bfi .carousel-indicators .active {
+    background-color: var(--bfi-primary);
+}
+
+
+/* Desktop view (md breakpoint and up): Override carousel to display as a grid */
+@media (min-width: 768px) {
+    #kenapa-bfi .kenapa-bfi-carousel-wrapper .carousel-inner {
+        display: flex;
+        flex-wrap: nowrap; /* Or 'wrap' if you expect more than 3 and want them to wrap */
+        overflow: visible; /* Make sure items aren't clipped by .carousel-inner */
+        margin-left: -0.75rem; /* Simulate .row gutter */
+        margin-right: -0.75rem; /* Simulate .row gutter */
+    }
+
+    #kenapa-bfi .kenapa-bfi-carousel-wrapper .carousel-item {
+        /* --- Core Visibility & Sizing for Flex --- */
+        display: block !important;       /* Ensure visibility */
+        flex: 0 0 33.333333%;         /* Distribute space: no grow, no shrink, basis 33.33% */
+        max-width: 33.333333%;        /* Hard cap on width */
+        width: 33.333333%;            /* Be explicit about width in flex context */
+
+        /* --- Reset Bootstrap Carousel Item Defaults --- */
+        position: static !important;      /* Override 'position: relative' */
+        float: none !important;           /* Override 'float: left' */
+        margin-right: 0 !important;       /* Override 'margin-right: -100%' */
+        transform: none !important;       /* Clear any translateX transforms */
+        opacity: 1 !important;            /* Ensure full opacity */
+        visibility: visible !important;   /* Ensure visibility */
+
+        /* --- Gutter Simulation (like .col-md-4) --- */
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        /* --- Other Resets --- */
+        padding-bottom: 0; /* Reset mobile padding */
+    }
+
+    #kenapa-bfi .kenapa-bfi-carousel-wrapper .kenapa-bfi-card-container {
+        padding-left: 0; /* Reset mobile padding */
+        padding-right: 0;
+    }
+
+    #kenapa-bfi .kenapa-bfi-carousel-wrapper .carousel-item .card {
+        width: 100%; /* Card takes full width of its "column" */
+        max-width: none; /* Remove mobile max-width constraint */
+        margin-bottom: 1.5rem; /* Standard Bootstrap .mb-4 spacing for columns */
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+    .promo-card {
+        min-height: auto;
+        padding: 2rem !important;
+    }
+    .promo-card .fs-1 {
+        font-size: 2rem !important;
+    }
+     .promo-card .fs-1 span {
+        font-size: 1rem !important;
+    }
+}
