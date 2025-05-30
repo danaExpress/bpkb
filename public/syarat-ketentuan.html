@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat dan Ketentuan - BFI Finance</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Assuming Poppins is linked */
+            color: #333;
+            background-color: #f8f9fa; /* Light grey background */
+        }
+        :root {
+            --bfi-primary: #004a99;
+            --bfi-orange: #f7941d;
+        }
+        .header-terms {
+            background-color: var(--bfi-primary);
+            color: white;
+            padding: 3rem 1rem;
+            margin-bottom: 2rem;
+        }
+        .header-terms h1 {
+            font-weight: 600;
+            color: white;
+        }
+        .terms-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.05);
+        }
+        .terms-content h2 {
+            color: var(--bfi-primary);
+            font-weight: 600;
+            margin-top: 2.5rem; /* Increased top margin for H2 */
+            margin-bottom: 1.25rem; /* Increased bottom margin for H2 */
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bfi-orange);
+            font-size: 1.75rem;
+        }
+        .terms-content h2:first-of-type { /* Reduce top margin for the very first H2 */
+            margin-top: 0.5rem;
+        }
+        .terms-content h3 {
+            color: var(--bfi-primary);
+            font-weight: 500;
+            margin-top: 1.75rem; /* Increased top margin for H3 */
+            margin-bottom: 1rem;   /* Increased bottom margin for H3 */
+            font-size: 1.4rem;
+        }
+        .terms-content p, .terms-content li {
+            line-height: 1.7;
+            margin-bottom: 1rem; /* Consistent paragraph/list item bottom margin */
+            color: #454545;
+            text-align: justify; /* Justify text for a more formal look */
+        }
+        .terms-content ul, .terms-content ol {
+            padding-left: 1.5rem; /* Standard indentation */
+        }
+        .terms-content ul li, .terms-content ol li {
+            margin-bottom: 0.5rem; /* Slightly less margin for items within a list */
+        }
+        .terms-nav {
+            position: sticky;
+            top: 20px;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+        }
+        .terms-nav .nav-link {
+            padding: 0.35rem 1rem;
+            color: #555;
+            font-size: 0.9rem;
+            border-left: 3px solid transparent;
+        }
+        .terms-nav .nav-link.active,
+        .terms-nav .nav-link:hover {
+            color: var(--bfi-orange);
+            border-left-color: var(--bfi-orange);
+            background-color: #f8f9fa;
+        }
+        .terms-nav .nav-link.active {
+            font-weight: 500;
+        }
+        .footer-terms {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 2rem;
+        }
+        .definition-term {
+            font-weight: bold;
+            color: #333;
+        }
+        body {
+          position: relative;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#termsNav" data-bs-offset="100">
+
+    <header class="header-terms text-center">
+        <div class="container">
+            <h1>Syarat dan Ketentuan</h1>
+            <p class="lead mb-0">PT BFI Finance Indonesia Tbk</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Table of Contents (Sidebar for larger screens) -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <nav id="termsNav" class="nav flex-column terms-nav bg-white p-3 rounded shadow-sm">
+                    <a class="nav-link" href="#pendahuluan">Pendahuluan</a>
+                    <a class="nav-link" href="#definisi">Definisi</a>
+                    <a class="nav-link" href="#ketentuan-umum">Ketentuan Umum</a>
+                    <a class="nav-link" href="#perubahan">Perubahan dari Waktu ke Waktu</a>
+                    <a class="nav-link" href="#fasilitas-pembiayaan">Ketentuan Terkait Fasilitas Pembiayaan</a>
+                    <a class="nav-link" href="#pernyataan-jaminan">Pernyataan dan Jaminan Anda</a>
+                    <a class="nav-link" href="#pengguna-konten">Pengguna Konten Situs Web</a>
+                    <a class="nav-link" href="#kewajiban-akses">Kewajiban dalam mengakses Situs</a>
+                    <a class="nav-link" href="#hak-bfi">Hak BFI Finance dalam Situs</a>
+                    <a class="nav-link" href="#hak-kekayaan-intelektual">Hak Kekayaan Intelektual</a>
+                    <a class="nav-link" href="#situs-pihak-ketiga">Situs Web Pihak Ketiga</a>
+                    <a class="nav-link" href="#cookies">Penggunaan Cookies</a>
+                    <a class="nav-link" href="#akun-password">Akun dan Kata Sandi Anda</a>
+                    <a class="nav-link" href="#pembatasan">Pembatasan</a>
+                    <a class="nav-link" href="#keterpisahan">Keterpisahan</a>
+                    <a class="nav-link" href="#hukum-penyelesaian">Hukum yang Berlaku dan Penyelesaian Perselisihan</a>
+                    <a class="nav-link" href="#pertentangan">Pertentangan</a>
+                    <a class="nav-link" href="#pembaruan-info">Informasi Pembaruan</a>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9">
+                <div class="terms-container">
+                    <div class="terms-content">
+                        <section id="pendahuluan">
+                            <p>Halaman ini menetapkan ketentuan-ketentuan penggunaan Situs dan Layanan BFI Finance (“Syarat dan Ketentuan”) untuk Anda. Mohon baca Syarat dan Ketentuan ini dengan seksama sebelum Anda menyetujui Syarat dan Ketentuan.</p>
+                            <p>Dengan Anda menyetujui Syarat dan Ketentuan ini maka Anda dengan ini menyatakan persetujuannya untuk terikat dan tunduk secara hukum pada Syarat dan Ketentuan ini.</p>
+                        </section>
+
+                        <section id="definisi">
+                            <h2>Definisi</h2>
+                            <p><span class="definition-term">“Kami”</span> adalah BFI Finance, dan BFI Finance adalah Perusahaan Pembiayaan Indonesia yang memiliki izin dan terdaftar serta diawasi oleh Otoritas Jasa Keuangan (“OJK”).</p>
+                            <p><span class="definition-term">“Fasilitas Pembiayaan”</span> berarti fasilitas pembiayaan yang diberikan oleh BFI Finance kepada Anda, dimana proses pengajuan permohonan fasilitas pembiayaan tersebut diantaranya dilakukan melalui Situs yang disediakan oleh BFI Finance.</p>
+                            <p><span class="definition-term">“Situs”</span> mengacu pada situs web bfi.co.id, termasuk semua domain dan sub-domainnya.</p>
+                            <p><span class="definition-term">“Data Pribadi”</span> berarti informasi atau data yang dapat digunakan untuk mengidentifikasi secara langsung atau tidak langsung seorang individu.</p>
+                            <p><span class="definition-term">“Anda”</span> berarti debitur, calon debitur sebagai pengguna Situs.</p>
+                            <p><span class="definition-term">“Kebijakan Privasi”</span> mengacu pada kebijakan privasi di Situs ini.</p>
+                            <p><span class="definition-term">“Kartu Tanda Penduduk (“KTP”)”</span> adalah identitas resmi seorang penduduk sebagai bukti diri yang diterbitkan oleh instansi pelaksana yang berlaku diseluruh wilayah Republik Indonesia.</p>
+                            <p><span class="definition-term">“Keadaan Memaksa”</span> adalah sebagaimana dimaksud dalam Syarat dan Ketentuan ini;</p>
+                            <p><span class="definition-term">“Konten Situs”</span> memiliki arti semua konten pada Situs web dan/atau Fasilitas Pembiayaan BFI Finance, secara keseluruhan atau setiap bagian, termasuk tetapi tidak terbatas pada desain, teks, gambar grafis, foto, gambar, citra, video, perangkat lunak, musik, suara dan file lain, peringkat Pembiayaan, tarif, biaya, kuotasi, data historis, grafik, statistik, artikel, informasi kontak BFI Finance, setiap informasi lain, dan pemilihan dan pengaturannya;</p>
+                            <p><span class="definition-term">“Debitur”</span> adalah orang perseorangan yang memperoleh Fasilitas Pembiayaan dari BFI Finance;</p>
+                            <p><span class="definition-term">“Pengguna”</span> mengacu pada siapa pun yang mengakses dan/atau menggunakan Situs baik orang tersebut terdaftar dalam Situs ataupun tidak. Syarat dan Ketentuan ini berlaku untuk semua pengguna.</p>
+                            <p><span class="definition-term">“Know Your Customer (KYC)”</span> adalah serangkaian proses yang dilakukan oleh BFI Finance dalam rangka penyediaan Fasilitas Pembiayaan, sesuai dengan kebijakan dan prosedur yang berlaku di BFI Finance serta ketentuan peraturan perundangan yang berlaku.</p>
+                            <p><span class="definition-term">“One Time Password (OTP)”</span> adalah kata sandi yang bersifat dinamis yang berlaku untuk 1 (satu) kali aktivitas anda dikirimkan melalui SMS ke nomor Ponsel (atau pada media lain yang ditentukan oleh BFI Finance) Pengguna yang terdaftar pada sistem sebagai autentifikasi dari pembuatan akun pada Situs.</p>
+                            <p><span class="definition-term">“Short Message Service (SMS)”</span> layanan pesan singkat berbasis teks yang dapat dikirim dan/ atau diterima menggunakan Ponsel.</p>
+                            <p><span class="definition-term">“Ponsel”</span> perangkat telekomunikasi elektronik yang dipergunakan oleh Pengguna.</p>
+                            <p><span class="definition-term">“Pihak Ketiga”</span> yang dimaksud dalam Syarat dan Ketentuan ini adalah pihak yang memiliki kerjasama dengan BFI Finance dalam rangka pelaksanaan pemberian Fasilitas Pembiayaan, termasuk tapi tidak terbatas pada: Dinas Kependudukan dan Catatan Sipil (Disdukcapil), Sistem Layanan Informasi Keuangan (SLIK) yang dikelola oleh Otoritas Jasa Keuangan Republik Indonesia, Lembaga Pengelola Informasi Perkreditan (LPIP), Lembaga Pencatatan Asset, dan/atau kepada pihak ketiga yang ditunjuk oleh atau yang bekerja sama dengan BFI Finance dalam rangka pengecekan, verifikasi, validasi terhadap Data Pribadi yang diberikan oleh Pengguna; penyelenggaraan layanan tanda-tangan elektronik dan penerbitan sertifikat elektronik oleh Penyelenggara Sertifikasi Elektronik (PSrE).</p>
+                            <p><span class="definition-term">“Perjanjian”</span> merupakan keseluruhan dokumen yang terdiri dari:
+                                <ul>
+                                    <li>Syarat dan Ketentuan;</li>
+                                    <li>Kebijakan Privasi, dan</li>
+                                    <li>Perjanjian Pembiayaan berikut dengan dokumen relevan lainnya.</li>
+                                </ul>
+                            </p>
+                        </section>
+
+                        <section id="ketentuan-umum">
+                            <h2>Ketentuan Umum</h2>
+                            <ol>
+                                <li>Anda merupakan perseorangan dan Warga Negara Indonesia yang telah memiliki Kartu Tanda Penduduk sesuai ketentuan hukum yang berlaku di Republik Indonesia.</li>
+                                <li>Sebelum menggunakan Fasilitas Pembiayaan dari BFI, Anda wajib mempelajari dan menyetujui Syarat dan Ketentuan ini apabila akan melakukan pendaftaran melalui Situs.</li>
+                                <li>Pada saat Anda: (1) melakukan pendaftaran pertama kali sebagai calon Debitur melalui Situs; (2) mengajukan permohonan Fasilitas Pembiayaan; (3) menandatangani Perjanjian Pembiayaan; (4) menggunakan Fasilitas Pembiayaan. Anda wajib membaca, mengerti, memahami dan memeriksa Syarat dan Ketentuan dengan seksama dan Anda wajib mengikuti proses dan langkah-langkah otentikasi dan verifikasi yang berlaku.</li>
+                                <li>BFI Finance berhak untuk melakukan evaluasi, penilaian dan menentukan (menyetujui atau menolak) Fasilitas Pembiayaan.</li>
+                                <li>Pengguna wajib menjaga kerahasiaan dan bertanggungjawab atas OTP yang diberikan oleh BFI Finance kepada Pengguna.</li>
+                            </ol>
+                        </section>
+
+                        <section id="perubahan">
+                            <h2>Perubahan dari Waktu ke Waktu</h2>
+                            <p>Syarat dan Ketentuan ini, sebagian atau seluruhnya, termasuk setiap fitur dan layanan dapat diubah, ditambah, dan/atau dimodifikasi dari waktu ke waktu berdasarkan kebijakan BFI Finance, dan BFI Finance akan menyampaikan melalui notifikasi kepada Anda, baik melalui pemberitahuan atau pengumuman pada Situs, surat elektronik, nomor telepon Anda yang terdaftar pada BFI Finance dan/ atau media komunikasi lainnya. Perubahan, penambahan, modifikasi terhadap Syarat dan Ketentuan ini akan berlaku (i) tiga puluh Hari Kerja setelah notifikasi disampaikan (“Masa Pemberitahuan”) dan tidak ada keberatan dari Anda atau (ii) apabila Anda telah menggunakan layanan Fasilitas Pembiayaan dari BFI setelah notifikasi disampaikan, mana yang lebih dahulu terjadi atau pada waktu lain sebagaimana ditentukan oleh hukum yang berlaku. Jika Anda ingin menolak perubahan, penambahan, modifikasi tersebut, maka Anda wajib menyelesaikan dan melunasi seluruh kewajiban Anda yan masih tertunggak dan terhutang terlebih dahulu.</p>
+                        </section>
+
+                        <section id="fasilitas-pembiayaan">
+                            <h2>Ketentuan Terkait Fasilitas Pembiayaan</h2>
+                            <h3>Aktivasi Layanan Fasilitas Pembiayaan</h3>
+                            <ol>
+                                <li>Apabila pengajuan permohonan Fasilitas Pembiayaan Anda dilakukan melalui Situs, maka untuk memperoleh Fasilitas Pembiayaan BFI Finance, Anda harus mempelajari dan menyetujui Syarat dan Ketentuan ini dan melakukan pendaftaran pada Situs, dengan ketentuan pendaftaran tersebut diterima dan disetujui oleh BFI Finance sebagaimana dapat dilihat pada Situs (“Aktivasi Layanan”).</li>
+                                <li>Dengan menyetujui Syarat dan Ketentuan ini, Anda telah memberikan persetujuan kepada BFI Finance untuk memperoleh, menggunakan, memproses, menyimpan dan mengungkapkan informasi Anda (termasuk data pribadi dan data demografi dan/ atau biometric Anda) sesuai Kebijakan Privasi, termasuk namun tidak terbatas pada pengalihan data dan informasi Anda kepada Pihak Ketiga, dengan menggunakan nomor telepon genggam Anda yang terdaftar untuk menghubungi Anda melalui berbagai layanan percakapan online (termasuk Whatsapp), sehubungan dengan Fasilitas Pembiayaan.</li>
+                                <li>Apabila diperlukan, BFI Finance dari waktu ke waktu dapat meminta Anda untuk menyampaikan dan/ atau mengunggah segala dokumen dan/ atau informasi tambahan, termasuk informasi pribadi secara elektronik kepada BFI Finance.</li>
+                            </ol>
+
+                            <h3>Permohonan Fasilitas Pembiayaan</h3>
+                            <ol>
+                                <li>Fasilitas Pembiayaan hanya dapat dicairkan dengan cara (diantaranya) mengajukan permohonan Fasilitas Pembiayaan melalui Situs dan kemudian akan menandatangani Perjanjian Pembiayaan secara langsung di kantor BFI Finance atau melalui aplikasi yang disediakan oleh BFI Finance dengan menggunakan tanda-tangan elektronik (jika tersedia);</li>
+                                <li>Anda dapat melakukan pencairan Fasilitas Pembiayaan maksimum sebesar limit pembiayaan yang tersedia sebagaimana tercantum dalam Situs. Anda mengakui dan menyetujui bahwa limit pembiayaan merupakan suatu fitur yang dapat berubah dari waktu ke waktu sesuai dengan analisa dan kemampuan kredit Debitur.</li>
+                                <li>Konfirmasi permohonan Fasilitas Pembiayaan pada halaman konfirmasi oleh Anda berlaku sebagai permohonan pencairan Fasilitas Pembiayaan dan sekaligus sebagai instruksi kepada BFI Finance untuk mencairkan Fasilitas Pembiayaan (apabila permohonan pencairan pembiayaan Anda disetujui oleh BFI Finance).</li>
+                                <li>Anda tidak dapat membatalkan permohonan pencairan Fasilitas Pembiayaan yang telah disetujui oleh BFI Finance apabila telah melewati Masa Jeda. Yang dimaksud dengan Masa Jeda adalah jangka waktu dimana Debitur berhak membatalkan Perjanjian Pembiayaan dengan pemberitahuan tertulis kepada BFI Finance sebagaimana disepakati di dalam Perjanjian Pembiayaan.</li>
+                            </ol>
+
+                            <h3>Pencairan Fasilitas Pembiayaan</h3>
+                            <p>Dengan tunduk pada Syarat dan Ketentuan ini, Anda dapat mengajukan permohonan pencairan Fasilitas Pembiayaan dengan ketentuan;</p>
+                            <ul>
+                                <li>Anda memiliki limit pembiayaan dengan nilai yang cukup dengan permohonan pencairan Fasilitas Pembiayaan;</li>
+                                <li>Anda memiliki kendaraan bermotor yang lulus survey sehingga dapat menjadi objek/ jaminan atas Fasilitas Pembiayaan; dan</li>
+                                <li>Tidak ada peristiwa cidera janji yang terjadi yang Anda lakukan terhadap Perjanjian.</li>
+                            </ul>
+                            <p>Anda dengan ini telah mengakui dan menyetujui bahwa permohonan, pemrosesan dan pencairan Fasilitas Pembiayaan juga akan tunduk pada Syarat dan Ketentuan ini.</p>
+
+                            <h3>Verifikasi</h3>
+                            <ol>
+                                <li>Anda dapat diminta untuk menyampaikan dokumen atau informasi tambahan, baik secara elektronik atau secara langsung kepada BFI Finance, atau melalui mitra BFI Finance, atau melalui Situs sebagaimana diinstruksikan, jika Anda ingin memperoleh Fasilias Pembiayaan sebagaimana diperlukan.</li>
+                                <li>BFI Finance akan melakukan verifikasi atas informasi dan dokumen yang Anda sampaikan melalui Situs dan menentukan apakah Anda telah memenuhi persyaratan untuk memperoleh Fasilitas Pembiayaan. BFI Finance akan melakukan verifikasi, pemeriksaan, penelaahan dan penilaian atas setiap informasi, data dan keterangan yang diberikan oleh Anda, termasuk untuk bekerjasama dengan Pihak Ketiga untuk melakukan verifikasi dan penilaian kelayakan untuk permohonan Fasilitas Pembiayaan.</li>
+                                <li>Persetujuan dan/ atau penolakan atas permohonan Anda merupakan kewenangan BFI Finance sepenuhnya dengan memperhatikan ketentuan hukum yang berlaku. BFI Finance berhak, sewaktu-waktu, menarik persetujuan atas permohonan Anda dan mengembalikan status Anda menjadi tidak terverifikasi, termasuk apabila terdapat keragu-raguan atas ketepatan dan/atau keabsahan serta kelengkapan dokumen dan/atau informasi yang Anda sampaikan.</li>
+                                <li>Untuk menghindari penyalahgunaan apapun atas data Anda, BFI Finance dapat menghentikan persetujuan dan/ atau pemberian Fasilitas Pembiayaan jika dokumen atau informasi yang diminta dari Anda tidak akurat, tidak sah dan/atau tidak lengkap.</li>
+                            </ol>
+                        </section>
+
+                        <section id="pernyataan-jaminan">
+                            <h2>Pernyataan dan Jaminan Anda</h2>
+                            <p>Anda dengan menyatakan kepada BFI Finance bahwa:</p>
+                            <ul>
+                                <li>Anda telah membaca dan menyetujui Syarat dan Ketentuan dan Kebijakan Privasi BFI Finance;</li>
+                                <li>Anda akan menggunakan dan/atau mengakses Situs, konten Situs, Fasilitas Pembiayaan hanya untuk tujuan yang sah dan tidak bertentangan dengan peraturan perundang-undangan yang berlaku;</li>
+                                <li>Anda memiliki hak hukum penuh, kapasitas dan kewenangan secara hukum untuk mengakses Situs dan mengajukan Fasilitas Pembiayaan kepada BFI Finance;</li>
+                                <li>Penggunaan Situs dan Layanan BFI Finance oleh Anda tidak melanggar kewajiban-kewajiban Anda yang sudah timbul dan/atau yang akan timbul, dimana termasuk juga namun tidak terbatas pada kewajiban Anda yang terdapat di dalam Perjanjian Anda dengan pihak ketiga lainnya;</li>
+                                <li>Semua informasi dan data-data yang telah Anda berikan atau akan Anda berikan kepada kami (termasuk tetapi tidak terbatas pada informasi Data Pribadi dan KTP) adalah data-data yang akurat dan lengkap serta tidak menyesatkan. Harap tidak mengirimkan setiap Data Pribadi atau data tanpa membaca terlebih dahulu Kebijakan Privasi kami yang menjelaskan penggunaan data dan penerapan privasi kami secara terperinci. Apabila di kemudian hari terdapat bentuk perubahan data-data yang telah Anda berikan kepada kami, maka Anda wajib untuk memberitahukan kepada kami saat perubahan data-data itu, termasuk tetapi tidak terbatas pada informasi pribadi yang diperbolehkan untuk perubahan;</li>
+                                <li>Tidak ada materi apapun yang disampaikan melalui akun Anda baik yang diposting ataupun dibagikan oleh Anda melalui Situs akan melanggar atau menyalahi hak-hak dari pihak ketiga manapun, termasuk hak cipta, merek dagang, privasi, publisitas atau hak-hak kepemilikan atau pribadi lainnya, atau materi yang melanggar hukum;</li>
+                                <li>Setiap bentuk pernyataan dan jaminan di atas dibuat dengan sebenar-benarnya, tanpa paksaan dari pihak manapun, tanpa menyembunyikan fakta dan hal material apapun, maka dengan demikian Anda akan bertanggung jawab sepenuhnya atas kebenaran dari hal-hal yang telah dinyatakan di atas, Anda juga bersedia untuk bertanggung jawab secara, apabila ternyata atas pernyataan dan jaminan tersebut di atas ditemukan ketidaksesuaian dengan keadaan yang sebenarnya.</li>
+                                <li>Dalam menggunakan Situs dan mengajukan permohonan Fasilitas Pembiayaan, maka Anda diwajibkan berusia minimal 21 tahun sampai dengan 60 tahun serta memiliki kapasitas hukum, hak, kuasa dan otoritas yang diperlukan untuk menyetujui Syarat dan Ketentuan ini, dan calon Debitur mengakses Situs, menggunakan Layanan Fasilitas Pembiayaan dan mengadakan kontrak dalam kapasitas Anda sendiri sebagai Pribadi.</li>
+                                <li>Apabila Anda tidak memenuhi kriteria di atas, maka:
+                                    <ul>
+                                        <li>Anda menyatakan dan menjamin bahwa Aktivasi Layanan dan aktivitas lain yang Anda lakukan dalam Situs telah disetujui oleh orang tua, wali, atau pengampu Anda; atau</li>
+                                        <li>BFI Finance berhak untuk menghentikan Fasilitas Pembiayaan, membatalkan Fasilitas Pembiayaan Anda dan/ atau melakukan tindakan yang diatur dalam ketentuan peristiwa cidera janji pada Perjanjian Pembiayaan.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section id="pengguna-konten">
+                            <h2>Pengguna Konten Situs Web</h2>
+                            <p>Dalam penggunaan Situs, Anda akan mematuhi Syarat dan Ketentuan ini, termasuk diantaranya Anda:</p>
+                            <ul>
+                                <li>Tidak menggunakan konten Situs untuk tujuan yang melanggar hukum, serta mematuhi semua hukum dan peraturan daerah, negara, nasional atau internasional yang berlaku;</li>
+                                <li>Tidak mengakses tanpa wewenang, meretas (hack), menghalangi, mengganggu, menonaktifkan, membebani dengan berlebihan atau mengganggu kerja atau tampilan yang layak dari Situs, yang termasuk tetapi tidak terbatas pada serangan penolakan layanan (denial-of-service), serangan spoof, sesi peretasan, gangguan rekayasa terbalik, pemrograman ulang, atau pemanfaatan setiap teknik framing untuk melampirkan setiap konten atau informasi kepemilikan lainnya;</li>
+                                <li>Tidak memposting materi dan data apapun yang berpotensi mengandung virus seperti Trojan Horse, Worm, Time-bomb, Keystroke Logger, Spyware, Adware atau kode komputer berbahaya lain atau yang serupa, file atau program yang dirancang untuk menginterupsi, mempengaruhi, merusak atau membatasi fungsionalitas setiap perangkat lunak atau perangkat keras komputer atau peralatan telekomunikasi;</li>
+                                <li>Tidak meminta kata sandi (password), mengumpulkan alamat-alamat email atau Data Pribadi lain para Pengguna dari Situs melalui alat elektronik atau alat lain untuk tujuan mengirim email yang atau komunikasi atau upaya lain yang tidak diminta untuk mengadakan setiap transaksi pinjaman dengan anggota di luar Layanan, atau setiap tujuan komersial atau melanggar hukum;</li>
+                                <li>Kecuali jika diizinkan oleh BFI Finance, maka Anda tidak dapat mendaftar untuk lebih dari satu akun Pengguna, mendaftar untuk satu akun Pengguna atas nama individu selain diri sendiri, mengoperasikan akun Pengguna atas nama atau untuk kepentingan siapapun yang tidak memenuhi syarat untuk mendaftar atau mengoperasikan akun Pengguna dengan nama mereka sendiri, atau mendaftar untuk akun Pengguna atas nama kelompok atau entitas;</li>
+                                <li>Wajib memperlakukan sebagai rahasia setiap kode identifikasi pengguna, password atau bagian lain dari informasi sebagai bagian dari prosedur pengamanan BFI Finance;</li>
+                                <li>Tidak mereproduksi, menduplikasi, menyalin atau menjual kembali bagian manapun dari Situs;</li>
+                                <li>Tidak menggunakan konten atau informasi yang apabila diposting, dibagikan, digunakan atau diunggah melaui Situs oleh Anda akan menyebabkan dilanggarnya sebagian atau seluruhnya hak dari pihak ketiga lainnya;</li>
+                                <li>Tidak mengelakkan atau mencoba mengelakkan, segala bentuk cara pengamanan apapun dari Situs;</li>
+                                <li>Wajib menjaga keamanan akun Anda, termasuk didalamnya kata sandi unik, password dan keterangan unik lainnya yang dapat dikatakan identik dengan Akun Anda dan Anda tetap bertanggung jawab atas penggunaan akun oleh orang lain selain dari Anda; dan</li>
+                                <li>Tidak mengizinkan pihak ketiga lainnya untuk melakukan hal yang dilarang di dalam Syarat dan Ketentuan dan Kebijakan Privasi.</li>
+                            </ul>
+                        </section>
+
+                        <section id="kewajiban-akses">
+                            <h2>Kewajiban dalam mengakses Situs</h2>
+                            <ol>
+                                <li>Anda bertanggung jawab untuk membuat semua pengaturan yang diperlukan agar Anda memiliki akses ke Situs BFI Finance;</li>
+                                <li>Perlu diketahui bahwa internet dapat terkena gangguan, pemadaman transmisi, penundaan transmisi karena lalu lintas Internet atau transmisi data yang salah sebagaimana hal ini melekat pada sifat Internet yang terbuka bagi publik;</li>
+                                <li>Perlu diketahui bahwa akses ke Situs BFI Finance, setiap layanan dan akun Anda dapat dibatasi atau tidak tersedia selama periode puncak permintaan atau karena alasan lain;</li>
+                                <li>BFI Finance tidak menjamin bahwa Situs atau setiap kontennya akan selalu tersedia atau tidak terganggu, dan BFI Finance tidak menjamin bahwa Situs terbebas dari segala virus atau kerusakan. Oleh karena itu Anda akan bertanggung jawab untuk melakukan konfigurasi teknologi informasi, program komputer dan platform Anda sendiri dalam rangka mengakses Situs. Anda harus menggunakan perangkat lunak antivirus milik Anda sendiri.</li>
+                            </ol>
+                        </section>
+
+                        <section id="hak-bfi">
+                            <h2>Hak BFI Finance dalam Situs</h2>
+                             <ol>
+                                <li>BFI Finance dari waktu ke waktu, dapat memutakhirkan, mengubah, menunda, menghentikan dan/atau mengakhiri (termasuk tetapi tidak terbatas pada setiap perubahan, penghapusan, penggantian dan koreksi) semua konten pada Situs, secara keseluruhan atau setiap bagian, termasuk tetapi tidak terbatas pada desain, teks, gambar grafis, foto, gambar, citra, video, perangkat lunak, musik, suara dan file lain, peringkat Pembiayaan, data historis, grafik, statistik, artikel, setiap informasi lain, dan pemilihan dan pengaturannya;</li>
+                                <li>Anda wajib memberitahukan BFI Finance dan melakukan pengkinian (update) atas setiap perubahan informasi Anda, data dan keterangan yang diberikan kepada BFI Finance atau diunggah (upload) ke Situs dari waktu ke waktu;</li>
+                                <li>BFI Finance berhak untuk memblokir akun Anda, setiap kode identifikasi pengguna atau kata sandi, apakah yang dipilih oleh Anda atau diberikan oleh BFI Finance, setiap saat, apabila Anda gagal untuk mematuhi isi dari Syarat dan Ketentuan ini.</li>
+                            </ol>
+                        </section>
+
+                        <section id="hak-kekayaan-intelektual">
+                            <h2>Hak Kekayaan Intelektual</h2>
+                            <ol>
+                                <li>Hak cipta, paten, merek dagang, desain terdaftar dan semua hak atas kekayaan intelektual pada Situs dan konten Situs, termasuk tetapi tidak terbatas pada hak cipta dalam gabungan dari semua konten adalah milik dan tetap merupakan hak dari BFI Finance;</li>
+                                <li>BFI Finance, gambar grafis, logo, desain, header halaman, ikon, tulisan dan nama layanan milik BFI Finance (secara kolektif disebut “Merek”) yang ditampilkan pada Situs ini adalah aset dari BFI Finance dan semua Merek yang secara tegas dilindungi oleh BFI Finance atau pihak ketiga yang relevan. Segala bentuk akses Anda pada dan/atau penggunaan Situs dan konten tidak dapat dianggap sebagai pemberian melalui implikasi, larangan menarik kembali suatu janji atau lainnya setiap lisensi atau hak untuk menggunakan merek dagang apapun yang ada pada Situs tanpa persetujuan tertulis terlebih dahulu dari BFI Finance;</li>
+                                <li>Anda tidak diizinkan untuk menggunakan Merek apapun tanpa persetujuan terlebih dahulu dari BFI Finance. BFI Finance secara agresif menggunakan hak kekayaan intelektual milik kami sepanjang diizinkan oleh hukum sepenuhnya. Nama BFI Finance dan Merek lain tidak dapat digunakan dengan cara apapun, termasuk dalam setiap iklan atau publisitas, atau sebagai hyperlink tanpa izin tertulis terlebih dahulu dari BFI Finance;</li>
+                                <li>Nama domain di mana Situs berada adalah milik mutlak BFI Finance dan Anda tidak dapat menggunakan atau mengadopsi nama serupa untuk penggunaan Anda sendiri;</li>
+                            </ol>
+                        </section>
+
+                        <section id="situs-pihak-ketiga">
+                            <h2>Situs Web Pihak Ketiga</h2>
+                            <p>Situs ada kalanya terkait dengan situs lain yang fungsionalitas dan keandalannya bergantung pada pihak ketiga. Kami menyarankan Anda untuk selalu merujuk kepada syarat dan ketentuan yang ada pada situs terkait sebelum Anda menggunakan situs tersebut.</p>
+                        </section>
+
+                        <section id="cookies">
+                            <h2>Penggunaan Cookies</h2>
+                            <p>Situs ini menggunakan cookies, yang perlu Anda setujui penggunaannya untuk menikmati fungsionalitas penuh dari Situs ini. Cookies adalah file yang digunakan oleh server BFI Finance untuk mengidentifikasi komputer Anda.</p>
+                        </section>
+
+                        <section id="akun-password">
+                            <h2>Akun dan Kata Sandi Anda</h2>
+                            <ol>
+                                <li>Apabila Anda memilih sendiri atau diberikan kode unik, kata sandi atau informasi lainnya dalam kaitannya dengan prosedur keamanan BFI Finance, Anda harus memperlakukan informasi tersebut dengan rahasia dan hati-hati. Anda tidak dapat memberikan informasi tersebut kepada pihak ketiga.</li>
+                                <li>Apabila Anda mengetahui atau mencurigai adanya pihak lain yang mengetahui kode unik atau kata sandi Anda, Anda wajib untuk memberitahukan dan menghubungi BFI Finance.</li>
+                            </ol>
+                        </section>
+
+                        <section id="pembatasan">
+                            <h2>Pembatasan</h2>
+                            <ol>
+                                <li>BFI Finance tidak bertanggungjawab atas kelengkapan, keakuratan, ketepatan dan kebenaran setiap data, keterangan serta informasi (termasuk informasi) yang diberikan atau data yang diunggah oleh Anda.</li>
+                                <li>Dengan memperhatikan hukum yang berlaku, BFI Finance tidak bertanggung jawab atas:
+                                    <ul>
+                                        <li>Setiap kerugian tidak langsung dan immaterial, termasuk biaya, bunga, kerusakan atau kerugian dalam bentuk atau jenis apapun (termasuk cidera pribadi, tekanan emosional dan hilangnya data, barang, pendapatan, laba, bisnis, peluang, penggunaan atau keuntungan ekonomis lainnya) yang Anda atau pihak ketiga alami karena kesalahan, kelalaian atau pelanggaran Anda atau pihak ketiga selain BFI Finance;</li>
+                                        <li>Setiap kerugian tidak langsung dan immaterial, termasuk biaya, bunga, kerusakan atau kerugian dalam bentuk atau jenis apapun (termasuk cidera pribadi, tekanan emosional dan hilangnya data, barang, pendapatan, laba, bisnis, peluang, penggunaan atau keuntungan ekonomis lainnya) yang terjadi karena kegagalan sistem dari Situs, layanan yang disediakan dalam Situs, juga keselamatan dan keamanan akun Anda pada situs akibat kesalahan, kelalaian atau pelanggaran Anda atau pihak ketiga selain BFI Finance.</li>
+                                    </ul>
+                                </li>
+                                <li>Klaim, gugatan atau tuntutan apapun yang Anda miliki terhadap BFI Finance sehubungan dengan Syarat dan Ketentuan ini harus diberitahukan kepada BFI Finance dalam waktu 6 (enam) bulan setelah peristiwa yang menimbulkan klaim.</li>
+                                <li>Dengan menyetujui Syarat dan Ketentuan ini, Anda setuju untuk membebaskan BFI Finance, afiliasi dan setiap pegawai, direktur, komisaris dan karyawan, wakil dan agen BFI Finance, dari dan terhadap setiap dan seluruh klaim, biaya, kerusakan, kerugian, tanggungjawab dan pengeluaran (termasuk biaya advokat) yang timbul atau sehubungan dengan:
+                                    <ul>
+                                        <li>Pelanggaran Anda terhadap Syarat dan Ketentuan, Perjanjian dan peraturan perundang-undangan yang berlaku;</li>
+                                        <li>Pelanggaran terhadap pernyataan dan jaminan sebagaimana disebutkan di atas;</li>
+                                        <li>Perbuatan dari pihak ketiga menggunakan Akun Anda yang menyebabkan kerugian bagi BFI Finance dan/atau pihak lainnya;</li>
+                                        <li>Pelanggaran Anda yang menyebabkan kerugian dari pihak ketiga;</li>
+                                        <li>Setiap penggunaan atau penyalahgunaan Fasilitas Pembiayaan oleh Anda atau pihak lain yang menggunakan akun Anda;</li>
+                                        <li>Setiap kesalahan yang dilakukan oleh pihak selain BFI, baik yang disengaja maupun berupa kelalaian; atau</li>
+                                        <li>Pemblokiran akun Anda berdasarkan hal-hal yang diatur dalam Syarat dan Ketentuan ini.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section id="keterpisahan">
+                            <h2>Keterpisahan</h2>
+                            <p>Jika ada syarat atau ketentuan dalam Syarat dan Ketentuan ini yang secara keseluruhan atau sebagian dinyatakan sebagai tidak sah atau tidak dapat dilaksanakan berdasarkan undang-undang atau peraturan hukum, syarat atau ketentuan atau bagian yang dinyatakan tidak sah atau tidak dapat dilaksanakan tersebut dianggap bukanlah merupakan bagian dari Syarat dan Ketentuan ini, dan atas keberlakuan dari syarat dan ketentuan lainnya di dalam Syarat dan Ketentuan tidak akan terpengaruh. Kegagalan BFI Finance dalam melaksanakan atau menjalankan setiap hak atau ketentuan dari Syarat dan Ketentuan ini bukan merupakan pengesampingan hak atau ketentuan tersebut, keadaan tersebut atau setiap keadaan lainnya.</p>
+                        </section>
+
+                        <section id="hukum-penyelesaian">
+                            <h2>Hukum yang Berlaku dan Penyelesaian Perselisihan</h2>
+                            <ol>
+                                <li>Segala penafsiran, pelaksanakan dan segala akibat yang ditimbulkan Syarat dan Ketentuan, Kebijakan Privasi dan Perjanjian diatur dan tunduk kepada hukum yang berlaku di Negara Republik Indonesia.</li>
+                                <li>Apabila terjadi perselisihan dalam pelaksanaan Syarat dan Ketentuan ini, termasuk Perjanjian, maka akan diselesaukan terlebih dahulu dengan cara musyawarah untuk mencapai mufakat.</li>
+                                <li>Dalam hal penyelesaian perselisihan melalui musyawarah mufakat dianggap tidak memberikan hasil, maka disepakati untuk menyelesaikan perselisihan melalui lembaga alternatif penyelesaian sengketa yang dimuat dalam daftar lembar alternatif penyelesaian sengketa yang ditetapkan oleh Otoritas Jasa Keuangan atau di Pengadilan Negeri Tangerang.</li>
+                            </ol>
+                        </section>
+
+                        <section id="pertentangan">
+                            <h2>Pertentangan</h2>
+                            <p>Apabila terdapat pertentangan antara Syarat dan Ketentuan ini dengan Kebijakan Privasi, Perjanjian Pembiayaan ataupun perikatan-perikatan yang timbul terkait dengan Situs dan Fasilitas Pembiayaan antara Anda dengan BFI Finance, maka urutan keberlakuan dari Perjanjian adalah sebagai berikut:</p>
+                            <ol>
+                                <li>Syarat dan Ketentuan;</li>
+                                <li>Kebijakan Privasi;</li>
+                                <li>Perjanjian Pembiayaan; dan</li>
+                                <li>Perikatan-perikatan lainnya antara BFI Finance dengan Anda, apabila ada.</li>
+                            </ol>
+                            <p>Batal demi hukumnya salah satu perjanjian tersebut diatas tidak menyebabkan menjadi batalnya perjanjian lainnya.</p>
+                        </section>
+
+                        <hr class="my-5">
+                        <section id="pembaruan-info">
+                            <p class="text-muted small fst-italic">Terakhir diperbarui tanggal 29 April 2025</p>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-terms">
+        <div class="container">
+            © <span id="currentYear"></span> PT BFI Finance Indonesia Tbk. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const termsNav = document.getElementById('termsNav');
+            if (termsNav) {
+                // Attempt to initialize ScrollSpy if the element exists
+                try {
+                    new bootstrap.ScrollSpy(document.body, {
+                        target: '#termsNav',
+                        offset: 120 // Adjust this offset
+                    });
+                } catch (e) {
+                    console.warn("ScrollSpy initialization failed. Ensure Bootstrap JS is loaded and target element exists.", e);
+                }
+            }
+
+            document.querySelectorAll('#termsNav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = 100; // Adjust if you have a fixed header
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                    }
+                });
+            });
+
+            const currentYearSpan = document.getElementById('currentYear');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
