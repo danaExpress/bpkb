@@ -44,12 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- Testimonial Video Modal Logic ---
     const testimonialVideoModal = document.getElementById('testimonialVideoModal');
-    const youtubePlayer = document.getElementById('youtubePlayer');
+    const youtubePlayer = document.getElementById('tubePlayer');
 
     if (testimonialVideoModal && youtubePlayer) {
         testimonialVideoModal.addEventListener('show.bs.modal', function (event) {
             const button = event.relatedTarget;
-            const youtubeId = button.getAttribute('data-youtube-id');
+            const youtubeId = button.getAttribute('data-tube-id');
             if (youtubeId) {
                 const videoSrc = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&showinfo=0&iv_load_policy=3`;
                 youtubePlayer.setAttribute('src', videoSrc);
