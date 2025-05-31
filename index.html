@@ -69,8 +69,29 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <!-- Slick Carousel Theme CSS (Optional, but recommended for default styling) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
 
-    <!-- Favicon (replace with your actual favicon) -->
+    <!-- DataTables CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"
+    />
+
+    <!-- Favicon (replace with  actual favicon) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -157,7 +178,9 @@
               </p>
               <h1 class="display-5 fw-bold text-white mb-3">
                 Butuh dana tunai Untuk
-                <span class="text-bfi-orange">Pendidikan?</span>
+                <span id="word-rotator" class="text-bfi-orange"
+                  >Pendidikan</span
+                >
               </h1>
               <p class="lead text-white mb-4">BFI Finance siap membantu Anda</p>
               <ul class="list-unstyled mb-4 fs-5">
@@ -203,126 +226,82 @@
           <h2 class="text-center text-bfi-primary mb-4">
             Promo Spesial dan Informasi Bulan Ini
           </h2>
-          <div
-            id="promoCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#promoCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#promoCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <!-- Add more indicators if you have more slides -->
+          <!-- This will be our Slick slider -->
+          <div class="promo-slick-slider rounded-3 overflow-hidden">
+            <!-- Slide 1 -->
+            <div>
+              <picture>
+                <!-- Desktop Image (Bootstrap's md breakpoint is 768px) -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Cashback%20BFI%20Mobile%20Mei%202025/NDFC/NDFC%20Banner%20Promo%20BFI%20Mobile%201920x702%20MEI.webp
+                  "
+                />
+                <!-- Mobile Image (acts as default and for screens < 768px) -->
+                <img
+                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Cashback%20BFI%20Mobile%20Mei%202025/NDFC/NDFC%20Banner%20Promo%20BFI%20Mobile%20600x600%20MEI.webp"
+                  class="d-block w-100"
+                  alt="Promo BFI Finance Spesial 1 - Desktop Version"
+                />
+              </picture>
             </div>
-            <div class="carousel-inner rounded-3 overflow-hidden">
-              <!-- Slide 1 -->
-              <div class="carousel-item active">
-                <picture>
-                  <!-- Desktop Image (Bootstrap's md breakpoint is 768px) -->
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Cashback%20BFI%20Mobile%20Mei%202025/NDFC/NDFC%20Banner%20Promo%20BFI%20Mobile%201920x702%20MEI.webp
-                    "
-                  />
-                  <!-- Mobile Image (acts as default and for screens < 768px) -->
-                  <img
-                    src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Cashback%20BFI%20Mobile%20Mei%202025/NDFC/NDFC%20Banner%20Promo%20BFI%20Mobile%20600x600%20MEI.webp"
-                    class="d-block w-100"
-                    alt="Promo BFI Finance Spesial 1 - Desktop Version"
-                  />
-                </picture>
-              </div>
 
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <picture>
-                  <!-- Desktop Image -->
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Paket%20Superdeal%202%20(Tambahan%20Truk)/Paket%20Superdeal%202%20Mei%202025%201920X702.webp
-                    "
-                  />
-                  <!-- Mobile Image -->
-                  <img
-                    src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Paket%20Superdeal%202%20(Tambahan%20Truk)/Paket%20Superdeal%202%20Mei%202025%20600-X-600.webp"
-                    class="d-block w-100"
-                    alt="Promo BFI Finance Spesial 2"
-                  />
-                </picture>
-              </div>
-
-              <div class="carousel-item">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/MPU/Web%20Landing%20Page%20Desktop%201920x702.webp
-                    "
-                  />
-                  <img
-                    src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/MPU/Web%20Landing%20Page%20Mobile%20600x600.webp"
-                    class="d-block w-100"
-                    alt="Promo BFI Finance Spesial 3"
-                  />
-                </picture>
-              </div>
-              <div class="carousel-item">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Mobil%20Listrik/Web%20Landing%20Page%20Desktop%201920x702.webp
-                    "
-                  />
-                  <img
-                    src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Mobil%20Listrik/Web%20Landing%20Page%20Mobile%20600x600.webp"
-                    class="d-block w-100"
-                    alt="Promo BFI Finance Spesial 3"
-                  />
-                </picture>
-              </div>
+            <!-- Slide 2 -->
+            <div>
+              <picture>
+                <!-- Desktop Image -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Paket%20Superdeal%202%20(Tambahan%20Truk)/Paket%20Superdeal%202%20Mei%202025%201920X702.webp
+                  "
+                />
+                <!-- Mobile Image -->
+                <img
+                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Paket%20Superdeal%202%20(Tambahan%20Truk)/Paket%20Superdeal%202%20Mei%202025%20600-X-600.webp"
+                  class="d-block w-100"
+                  alt="Promo BFI Finance Spesial 2"
+                />
+              </picture>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#promoCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#promoCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+
+            <!-- Slide 3 -->
+            <div>
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/MPU/Web%20Landing%20Page%20Desktop%201920x702.webp
+                  "
+                />
+                <img
+                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/MPU/Web%20Landing%20Page%20Mobile%20600x600.webp"
+                  class="d-block w-100"
+                  alt="Promo BFI Finance Spesial 3"
+                />
+              </picture>
+            </div>
+
+            <!-- Slide 4 -->
+            <div>
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Mobil%20Listrik/Web%20Landing%20Page%20Desktop%201920x702.webp
+                  "
+                />
+                <img
+                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Mobil%20Listrik/Web%20Landing%20Page%20Mobile%20600x600.webp"
+                  class="d-block w-100"
+                  alt="Promo BFI Finance Spesial 4"
+                />
+              </picture>
+            </div>
           </div>
         </div>
       </section>
-
       <section id="kenapa-bfi" class="py-5 bg-light">
         <div class="container">
           <h2 class="text-center text-bfi-primary mb-3">
@@ -446,7 +425,7 @@
             </div>
 
             <!-- Optional: Mobile Controls (hidden on md and up) -->
-            <!-- If you want prev/next arrows on mobile, uncomment and style them -->
+            <!-- If  want prev/next arrows on mobile, uncomment and style them -->
             <!--
             <button class="carousel-control-prev d-md-none" type="button" data-bs-target="#kenapaBfiCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -474,6 +453,51 @@
           <a href="#kalkulator-angsuran" class="btn btn-bfi-orange btn-lg"
             >Ajukan Sekarang <i class="bi bi-chevron-right"></i
           ></a>
+        </div>
+      </section>
+
+      <section id="cabang-nasional" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center text-bfi-primary mb-3">
+            Jaringan Cabang Luas di Seluruh Indonesia
+          </h2>
+          <p class="text-center text-muted mb-5 lead">
+            BFI Finance hadir lebih dekat untuk melayani Anda di berbagai
+            pelosok negeri.
+          </p>
+
+          <div class="row align-items-center">
+            <!-- Kolom Peta SVG -->
+            <div class="col-lg-12 mb-4 mb-lg-0">
+              <div class="map-container shadow-sm rounded p-3 bg-white">
+                <div id="map-container"></div>
+              </div>
+              <p class="text-center mt-2 text-muted small">
+                Jangkauan layanan BFI Finance di Indonesia.
+              </p>
+            </div>
+
+            <!-- Kolom Daftar Provinsi -->
+            <div class="col-lg-12">
+              <h4 class="text-bfi-secondary mb-3">
+                Provinsi Jangkauan Layanan:
+              </h4>
+              <table
+                id="provinsiTable"
+                class="display nowrap"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>Nama Provinsi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data provinsi akan diisi di sini -->
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -733,24 +757,15 @@
                 <div class="accordion-body">
                   <h3 class="text-bfi-primary mb-3">Profil Diri</h3>
                   <ul class="list-unstyled info-list">
+                    <li>Warga Negara Indonesia (WNI).</li>
                     <li>
-                      <i
-                        class="bi bi-person-check-fill text-bfi-orange me-2"
-                      ></i
-                      >Warga Negara Indonesia (WNI).
-                    </li>
-                    <li>
-                      <i
-                        class="bi bi-calendar-range-fill text-bfi-orange me-2"
-                      ></i
-                      >Berusia antara 21 hingga 60 tahun.
+                      Berusia antara 21 hingga 60 tahun.
                       <ul class="nested-list">
                         <li>Pelunasan maksimal di usia 60 tahun.</li>
                       </ul>
                     </li>
                     <li>
-                      <i class="bi bi-heart-half text-bfi-orange me-2"></i
-                      >Status Perkawinan:
+                      Status Perkawinan:
                       <ul class="nested-list">
                         <li>Belum Menikah</li>
                         <li>Menikah</li>
@@ -758,8 +773,7 @@
                       </ul>
                     </li>
                     <li>
-                      <i class="bi bi-house-heart-fill text-bfi-orange me-2"></i
-                      >Status Tempat Tinggal:
+                      Status Tempat Tinggal:
                       <ul class="nested-list">
                         <li>
                           Rumah sendiri (atas nama pribadi/pasangan/keluarga).
@@ -768,8 +782,7 @@
                       </ul>
                     </li>
                     <li>
-                      <i class="bi bi-briefcase-fill text-bfi-orange me-2"></i
-                      >Profesi Pekerjaan yang Diterima:
+                      Profesi Pekerjaan yang Diterima:
                       <ul class="nested-list">
                         <li>Karyawan (Tetap/Swasta).</li>
                         <li>Pegawai Negeri Sipil (PNS).</li>
@@ -777,10 +790,7 @@
                       </ul>
                     </li>
                     <li>
-                      <i
-                        class="bi bi-exclamation-triangle-fill text-danger me-2"
-                      ></i
-                      >Jenis usaha/profesi yang melanggar hukum tidak dapat
+                      Jenis usaha/profesi yang melanggar hukum tidak dapat
                       diterima.
                     </li>
                   </ul>
@@ -812,8 +822,7 @@
                   </h3>
                   <ul class="list-unstyled info-list">
                     <li>
-                      <i class="bi bi-patch-check-fill text-bfi-orange me-2"></i
-                      ><strong>Kepemilikan & BPKB:</strong>
+                      <strong>Kepemilikan & BPKB:</strong>
                       <ul class="nested-list">
                         <li>
                           Mobil merupakan kendaraan milik sendiri dengan BPKB
@@ -831,8 +840,7 @@
                       </ul>
                     </li>
                     <li>
-                      <i class="bi bi-calendar3 text-bfi-orange me-2"></i
-                      ><strong
+                      <strong
                         >Usia Kendaraan (Maksimal hingga akhir tenor):</strong
                       >
                       <ul class="nested-list">
@@ -861,8 +869,7 @@
                       </ul>
                     </li>
                     <li>
-                      <i class="bi bi-card-checklist text-bfi-orange me-2"></i
-                      ><strong>STNK & Pajak:</strong>
+                      <strong>STNK & Pajak:</strong>
                       <ul class="nested-list">
                         <li>STNK atas nama pribadi.</li>
                         <li>Pajak kendaraan wajib masih berlaku (hidup).</li>
@@ -874,8 +881,7 @@
                       </ul>
                     </li>
                     <li>
-                      <i class="bi bi-geo-alt-fill text-bfi-orange me-2"></i
-                      ><strong>Plat Kendaraan:</strong>
+                      <strong>Plat Kendaraan:</strong>
                       <ul class="nested-list">
                         <li>
                           Berlaku untuk seluruh wilayah Indonesia, kecuali Aceh
@@ -1034,7 +1040,7 @@
                         class="ratio ratio-16x9 testimonial-video-thumb-wrapper rounded-start overflow-hidden"
                         data-bs-toggle="modal"
                         data-bs-target="#testimonialVideoModal"
-                        data-youtube-id="OcdZm5ZUm4A"
+                        data-tube-id="OcdZm5ZUm4A"
                         role="button"
                         tabindex="0"
                         aria-label="Putar video testimoni Deddy Setiawan"
@@ -1098,7 +1104,7 @@
                         class="ratio ratio-16x9 testimonial-video-thumb-wrapper rounded-start overflow-hidden"
                         data-bs-toggle="modal"
                         data-bs-target="#testimonialVideoModal"
-                        data-youtube-id="UpvwVRtWeG8"
+                        data-tube-id="UpvwVRtWeG8"
                         role="button"
                         tabindex="0"
                         aria-label="Putar video testimoni Farida"
@@ -1151,7 +1157,7 @@
                   </div>
                 </div>
               </div>
-              <!-- Add more .carousel-item for more testimonials -->
+              <!--  .carousel-item for more testimonials -->
             </div>
             <button
               class="carousel-control-prev"
@@ -1201,24 +1207,14 @@
               <div class="modal-body p-0">
                 <div class="ratio ratio-16x9">
                   <iframe
-                    id="youtubePlayer"
-                    <!--
-                    Reverted
-                    to
-                    original
-                    id
-                    for
-                    consistency
-                    with
-                    earlier
-                    BS
-                    examples
-                    --
-                  >
-                    src="" title="YouTube video player" frameborder="0"
+                    id="tubePlayer"
+                    src=""
+                    title="Tube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write;
                     encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
+                    allowfullscreen
+                  >
                   </iframe>
                 </div>
               </div>
@@ -1284,7 +1280,7 @@
                 </div>
               </div>
             </div>
-            <!-- Add more FAQ items similarly -->
+            <!--  FAQ items similarly -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="faqHeading3">
                 <button
@@ -1427,37 +1423,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="social-icons mt-3">
-              <a href="#" class="text-white-50 me-2 fs-4"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a href="#" class="text-white-50 me-2 fs-4"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a href="#" class="text-white-50 me-2 fs-4"
-                ><i class="bi bi-youtube"></i
-              ></a>
-              <a href="#" class="text-white-50 me-2 fs-4"
-                ><i class="bi bi-twitter-x"></i
-              ></a>
-              <a href="#" class="text-white-50 me-2 fs-4"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a href="#" class="text-white-50 me-2 fs-4"
-                ><i class="bi bi-whatsapp"></i
-              ></a>
-              <a href="mailto:customercare@bfi.co.id" class="text-white-50 fs-4"
-                ><i class="bi bi-envelope-fill"></i
-              ></a>
-            </div>
             <h5 class="text-white mb-3">PT BFI Finance Indonesia Tbk</h5>
             <address class="small">
               BFI Tower<br />
               Sunburst CBD Lot. 1.2<br />
               Jl. Kapt. Soebijanto Djojohadikusumo<br />
               BSD City - Tangerang Selatan 15322<br /><br />
-              <p>Phone +62 21 2965 0300, 2965 0500</p>
-              <p>Fax +62 21 2965 0757, 2965 0758</p>
+              <p>Hotline +62 819 1443 8888</p>
+              <p>Whatsapp +62 819 1443 8888</p>
             </address>
           </div>
           <div class="col-md-4 mb-4">
@@ -1527,24 +1500,420 @@
     ></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Slick Carousel JS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.4/svg.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // ... (Slick Carousel, Word Rotator, DataTable code remains the same) ...
+        // Ensure these are initialized only if their respective elements exist
+        if ($(".promo-slick-slider").length) {
+          $(".promo-slick-slider").slick({
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            adaptiveHeight: true,
+            prevArrow:
+              '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>',
+          });
+        }
 
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyB95M26fcxamsv3fVcEH666utmUn1EIOh0",
-        authDomain: "bfi-gadai-bpkb.firebaseapp.com",
-        projectId: "bfi-gadai-bpkb",
-        storageBucket: "bfi-gadai-bpkb.firebasestorage.app",
-        messagingSenderId: "554072054107",
-        appId: "1:554072054107:web:0522b25a27c251d89de27e",
-      };
+        const wordRotatorElement = $("#word-rotator");
+        if (wordRotatorElement.length) {
+          const rotatingWords = [
+            "Modal Usaha",
+            "Pendidikan",
+            "Renovasi Rumah",
+            "Kesehatan",
+            "Biaya Sekolah",
+            "Pernikahan",
+            "Beli Peralatan Usaha",
+            "Kebutuhan Mendesak",
+          ];
+          let wordIndex = 0;
+          setInterval(function () {
+            wordIndex = (wordIndex + 1) % rotatingWords.length;
+            wordRotatorElement.fadeOut(300, function () {
+              $(this).text(rotatingWords[wordIndex]).fadeIn(300);
+            });
+          }, 3000);
+        }
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
+        const provinsiTableElement = $("#provinsiTable");
+        let dataTableInstance; // Store DataTable instance
+
+        // --- SVG.js map code ---
+        const mapContainer = $("#map-container");
+        if (mapContainer.length === 0) {
+          console.error("Map container #map-container not found.");
+          return;
+        }
+        mapContainer.html("");
+
+        const draw = SVG().addTo("#map-container").size("100%", "500px");
+        const mapSvgPath = "id.svg";
+        const iconPath = "pin.svg";
+        const iconSize = 20;
+
+        // IMPORTANT: Ensure province names here are EXACTLY as in provinsiList for DataTable
+        const provincesToMark = [
+          { name: "Sumatera Utara", mapElementId: "IDSU" },
+          { name: "Sumatera Barat", mapElementId: "IDSB" },
+          { name: "Riau", mapElementId: "IDRI" },
+          { name: "Kepulauan Riau", mapElementId: "IDKR" },
+          { name: "Jambi", mapElementId: "IDJA" },
+          { name: "Bengkulu", mapElementId: "IDBE" },
+          { name: "Sumatera Selatan", mapElementId: "IDSS" },
+          { name: "Kepulauan Bangka Belitung", mapElementId: "IDBB" }, // Matched
+          { name: "Lampung", mapElementId: "IDLA" },
+          { name: "Banten", mapElementId: "IDBT" },
+          { name: "DKI Jakarta", mapElementId: "IDJK" }, // Matched
+          { name: "Jawa Barat", mapElementId: "IDJB" },
+          { name: "Jawa Tengah", mapElementId: "IDJT" },
+          { name: "DI Yogyakarta", mapElementId: "IDYO" }, // Matched
+          { name: "Jawa Timur", mapElementId: "IDJI" },
+          { name: "Bali", mapElementId: "IDBA" },
+          { name: "Nusa Tenggara Barat", mapElementId: "IDNB" },
+          { name: "Nusa Tenggara Timur", mapElementId: "IDNT" },
+          { name: "Kalimantan Barat", mapElementId: "IDKB" },
+          { name: "Kalimantan Tengah", mapElementId: "IDKT" },
+          { name: "Kalimantan Selatan", mapElementId: "IDKS" },
+          { name: "Kalimantan Timur", mapElementId: "IDKI" },
+          { name: "Kalimantan Utara", mapElementId: "IDKU" },
+          { name: "Gorontalo", mapElementId: "IDGO" },
+          { name: "Sulawesi Utara", mapElementId: "IDSA" },
+          { name: "Sulawesi Tengah", mapElementId: "IDST" },
+          { name: "Sulawesi Barat", mapElementId: "IDSR" },
+          { name: "Sulawesi Selatan", mapElementId: "IDSN" },
+          { name: "Sulawesi Tenggara", mapElementId: "IDSG" },
+          { name: "Maluku", mapElementId: "IDMA" },
+          { name: "Maluku Utara", mapElementId: "IDMU" },
+          { name: "Papua Barat", mapElementId: "IDPB" },
+          { name: "Papua", mapElementId: "IDPA" },
+          { name: "Papua Selatan", mapElementId: "IDPS" },
+          { name: "Papua Tengah", mapElementId: "IDPT" },
+          { name: "Papua Pegunungan", mapElementId: "IDPP" },
+          { name: "Papua Barat Daya", mapElementId: "IDPD" },
+        ];
+
+        // Helper: Store original fills to revert hover/selection
+        const originalFills = new Map();
+        let selectedMapElement = null;
+        let selectedTableRow = null;
+
+        function highlightMapElement(element, isSelection = false) {
+          if (!element) return;
+          if (!originalFills.has(element)) {
+            originalFills.set(element, {
+              fill: element.attr("fill"),
+              opacity: element.attr("opacity") || 1,
+            });
+          }
+          element.fill({
+            color: isSelection ? "#007bff" : "#FFD700",
+            opacity: isSelection ? 0.8 : 0.7,
+          }); // Blue for selection, Gold for hover
+          if (isSelection) {
+            // Bring to front if it's a path/shape (circles are usually on top of paths)
+            if (element.front && typeof element.front === "function") {
+              element.front();
+            }
+            // If there's an icon associated, maybe make it more prominent or add a border
+            const icon = draw.findOne(
+              `.province-icon[data-province-map-id="${element.id()}"]`
+            );
+            if (icon)
+              icon
+                .animate(100)
+                .transform({ scale: 1.5 })
+                .animate(100)
+                .transform({ scale: 1 });
+          }
+        }
+
+        function unhighlightMapElement(element) {
+          if (!element || !originalFills.has(element)) return;
+          const original = originalFills.get(element);
+          element.fill({ color: original.fill, opacity: original.opacity });
+        }
+
+        function selectMapProvince(provinceName) {
+          // Clear previous map selection
+          if (selectedMapElement) {
+            unhighlightMapElement(selectedMapElement);
+            // Reset original fill for next hover
+            const original = originalFills.get(selectedMapElement);
+            if (original)
+              selectedMapElement.fill({
+                color: original.fill,
+                opacity: original.opacity,
+              });
+            selectedMapElement = null;
+          }
+
+          const provinceData = provincesToMark.find(
+            (p) => p.name === provinceName
+          );
+          if (provinceData) {
+            const mapElement = draw.findOne("#" + provinceData.mapElementId);
+            if (mapElement) {
+              selectedMapElement = mapElement;
+              highlightMapElement(mapElement, true); // True for selection highlight
+              // Optional: Center map or zoom (more complex)
+            } else {
+              console.warn(
+                `Map element for "${provinceName}" (ID: ${provinceData.mapElementId}) not found for selection.`
+              );
+            }
+          }
+        }
+
+        function selectTableRow(provinceName) {
+          if (!dataTableInstance) return;
+          // Clear previous table selection
+          if (selectedTableRow) {
+            $(selectedTableRow).removeClass("selected-row");
+            selectedTableRow = null;
+          }
+
+          dataTableInstance.rows().every(function () {
+            const rowNode = this.node();
+            const cellData = this.cell($(rowNode).find("td:first")).data();
+            if (cellData === provinceName) {
+              selectedTableRow = rowNode;
+              $(selectedTableRow).addClass("selected-row");
+              // Scroll to the row if needed
+              // selectedTableRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              // DataTable specific scroll:
+              dataTableInstance.row(selectedTableRow).scrollTo(false); // false to not change page if paginated
+              return false; // exit loop
+            }
+          });
+        }
+
+        // Initialize DataTable
+        if (provinsiTableElement.length) {
+          const provinsiList = [
+            // Make sure these names match provincesToMark[i].name
+            "Sumatera Utara",
+            "Sumatera Barat",
+            "Riau",
+            "Kepulauan Riau",
+            "Jambi",
+            "Bengkulu",
+            "Sumatera Selatan",
+            "Kepulauan Bangka Belitung",
+            "Lampung",
+            "Banten",
+            "DKI Jakarta",
+            "Jawa Barat",
+            "Jawa Tengah",
+            "DI Yogyakarta",
+            "Jawa Timur",
+            "Bali",
+            "Nusa Tenggara Barat",
+            "Nusa Tenggara Timur",
+            "Kalimantan Barat",
+            "Kalimantan Tengah",
+            "Kalimantan Selatan",
+            "Kalimantan Timur",
+            "Kalimantan Utara",
+            "Gorontalo",
+            "Sulawesi Utara",
+            "Sulawesi Tengah",
+            "Sulawesi Barat",
+            "Sulawesi Selatan",
+            "Sulawesi Tenggara",
+            "Maluku",
+            "Maluku Utara",
+            "Papua Barat",
+            "Papua",
+            "Papua Selatan",
+            "Papua Tengah",
+            "Papua Pegunungan",
+            "Papua Barat Daya",
+          ];
+          const tbody = provinsiTableElement.find("tbody");
+          provinsiList.forEach((provinsi) => {
+            tbody.append(`<tr><td>${provinsi}</td></tr>`);
+          });
+          dataTableInstance = provinsiTableElement.DataTable({
+            responsive: true,
+            paging: false, // If true, scrolling to row might need page change
+            searching: true,
+            ordering: true,
+            info: false,
+            // scrollY: "300px", // Example if you want internal scroll for table
+            // scrollCollapse: true,
+          });
+
+          // --- DataTable Row Click -> Map Interaction ---
+          $("#provinsiTable tbody").on("click", "tr", function () {
+            const provinceName = $(this).find("td:first").text();
+            if (selectedTableRow === this) {
+              // Clicking the already selected row
+              // Optional: Deselect both
+              if (selectedMapElement) unhighlightMapElement(selectedMapElement);
+              $(this).removeClass("selected-row");
+              selectedMapElement = null;
+              selectedTableRow = null;
+            } else {
+              selectTableRow(provinceName);
+              selectMapProvince(provinceName);
+            }
+          });
+        }
+
+        // Use fetch to load the SVG file content
+        fetch(mapSvgPath)
+          .then((response) => {
+            if (!response.ok)
+              throw new Error(
+                `HTTP error! status: ${response.status} for ${mapSvgPath}`
+              );
+            return response.text();
+          })
+          .then((svgString) => {
+            const tempParser = document.createElement("div");
+            tempParser.innerHTML = svgString.trim();
+            const loadedSvgElement = tempParser.querySelector("svg");
+            let viewBoxVal = null,
+              originalWidth = null,
+              originalHeight = null;
+
+            if (loadedSvgElement) {
+              viewBoxVal = loadedSvgElement.getAttribute("viewBox");
+              originalWidth = loadedSvgElement.getAttribute("width");
+              originalHeight = loadedSvgElement.getAttribute("height");
+            } else {
+              console.warn(`Could not parse <svg> tag from ${mapSvgPath}.`);
+            }
+
+            draw.svg(svgString);
+
+            if (viewBoxVal) {
+              draw.viewbox(viewBoxVal);
+            } else if (originalWidth && originalHeight) {
+              draw.viewbox(
+                0,
+                0,
+                parseFloat(originalWidth),
+                parseFloat(originalHeight)
+              );
+            } else {
+              console.warn(
+                `Could not determine viewBox or dimensions from ${mapSvgPath}.`
+              );
+            }
+            console.log(`Map SVG (${mapSvgPath}) processed.`);
+
+            provincesToMark.forEach((province) => {
+              // This assumes province.mapElementId is the ID of the <circle> or main shape
+              const provinceElement = draw.findOne("#" + province.mapElementId);
+
+              if (provinceElement) {
+                originalFills.set(provinceElement, {
+                  fill: provinceElement.attr("fill") || "grey",
+                  opacity: provinceElement.attr("opacity") || 1,
+                }); // Store initial fill
+
+                const bbox = provinceElement.bbox();
+                if (
+                  bbox.width === 0 &&
+                  bbox.height === 0 &&
+                  bbox.x === 0 &&
+                  bbox.y === 0
+                ) {
+                  console.warn(
+                    `BBox for ${province.name} (${province.mapElementId}) is zero.`
+                  );
+                  // return; // Don't return, still try to set up handlers
+                }
+
+                const iconX = bbox.cx - iconSize / 2;
+                const iconY = bbox.cy - iconSize / 2;
+
+                draw
+                  .image(iconPath)
+                  .size(iconSize, iconSize)
+                  .move(iconX, iconY)
+                  .addClass("province-icon")
+                  .attr("data-province-name", province.name)
+                  .attr("data-province-map-id", province.mapElementId) // Link icon to map element ID
+                  .css({ cursor: "pointer" })
+                  .on("click", function () {
+                    const clickedProvinceName = this.attr("data-province-name");
+                    // alert(`Anda mengklik ${clickedProvinceName}`); // Old alert
+                    selectTableRow(clickedProvinceName); // Highlight in table
+                    selectMapProvince(clickedProvinceName); // Highlight on map
+                  })
+                  .on("mouseover", function () {
+                    // Optional: highlight the main province shape on icon hover
+                    const mainElement = draw.findOne(
+                      "#" + this.attr("data-province-map-id")
+                    );
+                    if (mainElement && mainElement !== selectedMapElement) {
+                      highlightMapElement(mainElement, false); // false for hover highlight
+                    }
+                  })
+                  .on("mouseout", function () {
+                    const mainElement = draw.findOne(
+                      "#" + this.attr("data-province-map-id")
+                    );
+                    if (mainElement && mainElement !== selectedMapElement) {
+                      unhighlightMapElement(mainElement);
+                    }
+                  });
+
+                // Interaction for the main province shape (e.g., circle or path)
+                provinceElement
+                  .css({ cursor: "pointer" })
+                  .on("click", function () {
+                    // Find province name from provincesToMark based on this element's ID
+                    const pData = provincesToMark.find(
+                      (p) => p.mapElementId === this.id()
+                    );
+                    if (pData) {
+                      selectTableRow(pData.name);
+                      selectMapProvince(pData.name);
+                    }
+                  })
+                  .on("mouseover", function () {
+                    if (this !== selectedMapElement) {
+                      highlightMapElement(this, false);
+                    }
+                  })
+                  .on("mouseout", function () {
+                    if (this !== selectedMapElement) {
+                      unhighlightMapElement(this);
+                    }
+                  });
+              } else {
+                console.warn(
+                  `SVG element '${province.mapElementId}' for '${province.name}' not found in ${mapSvgPath}.`
+                );
+              }
+            });
+          })
+          .catch((error) => {
+            console.error("Error loading or processing map SVG:", error);
+            mapContainer.html(
+              `<p style="color:red;">Error loading map: ${error.message}.</p>`
+            );
+          });
+      });
     </script>
   </body>
 </html>
