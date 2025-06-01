@@ -204,6 +204,10 @@ h1, h2, h3, h4, h5, h6 {
         width: auto; /* Allow buttons to size naturally or set specific width */
         display: inline-block; /* If they become block due to other styles */
     }
+    #hero h1.display-5 { 
+        font-size: 30px;
+    }
+
 }
 
 

@@ -109,7 +109,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const ajukanPembiayaanBtn = document.getElementById('ajukanPembiayaanBtn');
 
     const loanConfig = {
-        mobil: { minAmount: 5000000, maxAmount: 2000000000, amountStep: 1000000, minTenor: 12, maxTenor: 48, tenorStep: 1, interestRate: 0.0076, defaultAmount: 50000000, defaultTenor: 48 },
+        mobil: { minAmount: 10000000, maxAmount: 2000000000, amountStep: 1000000, minTenor: 12, maxTenor: 48, tenorStep: 1, interestRate: 0.0076, defaultAmount: 50000000, defaultTenor: 48 },
+        truk: { minAmount: 10000000, maxAmount: 2000000000, amountStep: 1000000, minTenor: 12, maxTenor: 48, tenorStep: 1, interestRate: 0.0076, defaultAmount: 50000000, defaultTenor: 48 },
+        pickup: { minAmount: 10000000, maxAmount: 2000000000, amountStep: 1000000, minTenor: 12, maxTenor: 48, tenorStep: 1, interestRate: 0.0076, defaultAmount: 50000000, defaultTenor: 48 },
         motor: { minAmount: 1000000, maxAmount: 50000000, amountStep: 500000, minTenor: 6, maxTenor: 24, tenorStep: 1, interestRate: 0.022, defaultAmount: 10000000, defaultTenor: 24 }
     };
 
@@ -129,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
         loanAmountSlider.step = config.amountStep;
         loanAmountSlider.value = config.defaultAmount;
         loanAmountValueDisplay.textContent = formatCurrency(loanAmountSlider.value);
-        loanAmountHelp.textContent = `Pembiayaan dari ${formatCurrency(config.minAmount)} s.d. ${formatCurrency(config.maxAmount)}`;
+        loanAmountHelp.textContent = `Pembiayaan mulai dari ${formatCurrency(config.minAmount)} s.d. ${formatCurrency(config.maxAmount)}`;
 
         loanTenorSlider.min = config.minTenor;
         loanTenorSlider.max = config.maxTenor;

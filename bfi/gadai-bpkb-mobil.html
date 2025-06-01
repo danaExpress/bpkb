@@ -762,8 +762,8 @@
               <label for="vehicleType" class="form-label">Jenis Jaminan</label>
               <select id="vehicleType" name="vehicleType" class="form-select">
                 <option value="mobil" selected>Mobil</option>
-                <option value="truk" selected>Truk</option>
-                <option value="pickup" selected>Pickup</option>
+                <option value="truk">Truk</option>
+                <option value="pickup">Pickup</option>
                 <option value="motor">Motor</option>
               </select>
             </div>
@@ -1892,7 +1892,7 @@
           });
           dataTableInstance = provinsiTableElement.DataTable({
             responsive: true,
-            paging: false, // If true, scrolling to row might need page change
+            paging: true, // If true, scrolling to row might need page change
             searching: true,
             ordering: true,
             info: false,

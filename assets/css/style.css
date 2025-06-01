@@ -188,6 +188,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out;
 }
 
+#word-rotator {
+  display: inline-block; /* Helps with vertical-align and potential width/height settings */
+  vertical-align: baseline; /* Or 'bottom', 'middle' - experiment if needed */
+}
+
 
 @media (max-width: 991.98px) { /* lg breakpoint */
     .hero-section-custom-bg {
@@ -204,10 +209,57 @@ h1, h2, h3, h4, h5, h6 {
         width: auto; /* Allow buttons to size naturally or set specific width */
         display: inline-block; /* If they become block due to other styles */
     }
+    #hero h1.display-5 { 
+        font-size: 30px;
+    }
 }
 
+/* Make search input a bit more prominent or match your site's theme */
+div.dataTables_wrapper div.dataTables_filter input {
+  /* margin-left: 0.5em; */ /* Default margin, remove if using _INPUT_ trick and Bootstrap cols */
+  display: inline-block;
+  width: auto; /* Let Bootstrap columns handle width */
+  padding: .375rem .75rem; /* Bootstrap's default input padding */
+  font-size: 1rem; /* Bootstrap's default input font size */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem; /* Bootstrap's default border-radius */
+}
 
-/* ... (rest of your CSS) ... */
+/* Ensure responsive child rows look good */
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child::before {
+  background-color: #0d6efd; /* Bootstrap primary color, or your theme color */
+  border-radius: 50%;
+  color: white;
+  box-shadow: none;
+  top: 12px; /* Adjust vertical alignment if needed */
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::before {
+  background-color: #dc3545; /* Example: Bootstrap danger color when expanded */
+}
+
+/* Optional: Style the child row displayed by responsive extension */
+table.dataTable > tbody > tr.child ul.dtr-details {
+  padding-left: 0; /* Remove default ul padding */
+}
+table.dataTable > tbody > tr.child li {
+  list-style-type: none;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eee;
+}
+table.dataTable > tbody > tr.child li:last-child {
+  border-bottom: none;
+}
+.dtr-title {
+  font-weight: bold;
+}
 
 /* Promo Card in Carousel */
 .promo-card {

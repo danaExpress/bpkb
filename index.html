@@ -32,15 +32,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      BFI Finance - Pinjaman Dana Tunai Jaminan BPKB Mobil untuk Pendidikan
+      DanaExpress - Pinjaman Dana Tunai Jaminan BPKB Mobil, Truck & Pickup
     </title>
     <meta
       name="description"
-      content="Butuh dana tunai untuk pendidikan? BFI Finance siap membantu Anda dengan pinjaman jaminan BPKB mobil. Proses cepat, tenor panjang hingga 48 bulan. Ajukan sekarang!"
+      content="Butuh dana tunai mendesak? DanaExpress siap membantu Anda dengan pinjaman jaminan BPKB mobil truck dan pickup. Bunga flat, tenor panjang hingga 48 bulan. Ajukan sekarang!"
     />
     <meta
       name="keywords"
-      content="BFI Finance, pinjaman dana tunai, jaminan BPKB mobil, dana pendidikan, pinjaman cepat, tenor panjang"
+      content="DanaExpress, adira finance, pinjaman dana tunai, jaminan BPKB mobil, jaminan BPKB truck, jaminan BPKB pickup, dana pendidikan, pinjaman cepat, tenor panjang"
     />
     <link
       rel="canonical"
@@ -68,7 +68,7 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -92,7 +92,146 @@
     />
 
     <!-- Favicon (replace with  actual favicon) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FinancialProduct",
+        "name": "Gadai BPKB Mobil DanaExpress",
+        "alternateName": "Pinjaman Jaminan BPKB Mobil BFI",
+        "description": "Dapatkan pinjaman dana tunai cepat dan mudah dengan jaminan BPKB mobil Anda melalui DanaExpress. Proses aman, bunga kompetitif, dan tenor fleksibel.",
+        "brand": {
+          "@type": "Brand",
+          "name": "DanaExpress"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "DanaExpress Indonesia.",
+          "url": "https://www.bfi.co.id/", // Replace with the actual DanaExpress URL
+          "logo": "https://www.bfi.co.id/themes/bfi/logo.png", // Replace with actual logo URL
+          "sameAs": [
+            // Optional: Social media or other official links
+            "https://www.facebook.com/BFIFinance/",
+            "https://www.instagram.com/bfifinance/",
+            "https://twitter.com/BFIFinance"
+          ]
+        },
+        "category": "Loan",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Indonesia"
+        },
+        "interestRate": {
+          // Example: Be as specific as possible, or provide a range/typical rate
+          "@type": "QuantitativeValue",
+          "minValue": 0.9, // Example: 0.9%
+          "maxValue": 2.0, // Example: 2.0%
+          "unitText": "% per month" // Or "% per annum"
+        },
+        "feesAndCommissionsSpecification": [
+          // Examples of potential fees
+          {
+            "@type": "FeeSpecification",
+            "name": "Biaya Administrasi",
+            "description": "Biaya administrasi untuk proses pengajuan pinjaman.",
+            "priceCurrency": "IDR"
+            // "price": "500000" // Optional: if a fixed fee
+          },
+          {
+            "@type": "FeeSpecification",
+            "name": "Biaya Provisi",
+            "description": "Biaya provisi yang dikenakan.",
+            "priceCurrency": "IDR"
+            // "priceSpecification": {
+            //   "@type": "PriceSpecification",
+            //   "price": "1.0", // e.g., 1%
+            //   "priceCurrency": "IDR",
+            //   "valueAddedTaxIncluded": false,
+            //   "unitText": "% of loan amount"
+            // }
+          },
+          {
+            "@type": "FeeSpecification",
+            "name": "Biaya Asuransi",
+            "description": "Biaya asuransi kendaraan selama masa pinjaman.",
+            "priceCurrency": "IDR"
+          }
+        ],
+        "loanTerm": {
+          // Example for loan duration
+          "@type": "QuantitativeValue",
+          "minValue": 12, // Example: 12 months
+          "maxValue": 48, // Example: 48 months
+          "unitText": "months"
+        },
+        "requiredCollateral": "BPKB Mobil (Car Ownership Certificate)",
+        "url": "https://www.bfi.co.id/produk/gadai-bpkb-mobil", // IMPORTANT: URL of THIS specific product page
+        "offers": {
+          // If you have specific offers or CTAs
+          "@type": "Offer",
+          "url": "https://www.bfi.co.id/produk/gadai-bpkb-mobil/ajukan", // URL to the application form
+          "priceCurrency": "IDR",
+          "name": "Ajukan Pinjaman Gadai BPKB Mobil Sekarang"
+        },
+        "mainEntity": [
+          // Array for multiple entities, here we use it for FAQPage
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Apa saja syarat untuk mengajukan gadai BPKB mobil di DanaExpress?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Syarat umum pengajuan gadai BPKB mobil di DanaExpress meliputi: Warga Negara Indonesia (WNI), usia 21-60 tahun (atau sudah menikah), status tempat tinggal (rumah sendiri/pasangan/keluarga/kontrak tahunan), jenis pekerjaan (karyawan tetap/wiraswasta), dan kendaraan atas nama sendiri atau pasangan. Dokumen yang dibutuhkan antara lain KTP, Kartu Keluarga, NPWP, Slip Gaji/Bukti Penghasilan, Rekening Koran, STNK, dan BPKB asli."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Berapa lama proses pencairan dana gadai BPKB mobil?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Proses pencairan dana di DanaExpress relatif cepat. Setelah semua dokumen persyaratan lengkap dan disetujui, dana dapat cair dalam 1-2 hari kerja, tergantung kelengkapan data dan hasil survei."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Apakah mobil saya harus diasuransikan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ya, untuk keamanan bersama, mobil yang dijaminkan BPKB-nya di DanaExpress wajib diasuransikan selama masa pinjaman. DanaExpress dapat membantu proses asuransinya."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Jenis mobil apa saja yang bisa dijaminkan BPKB-nya?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "DanaExpress menerima berbagai jenis mobil penumpang (sedan, minibus, jeep, city car) dengan usia kendaraan maksimal tertentu (biasanya tidak lebih dari 15-20 tahun pada saat pelunasan). Kondisi mobil juga akan menjadi pertimbangan."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Bagaimana cara mengajukan pinjaman gadai BPKB mobil di DanaExpress?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Anda bisa mengajukan secara online melalui website resmi DanaExpress, menghubungi call center, atau datang langsung ke kantor cabang DanaExpress terdekat. Siapkan dokumen persyaratan yang dibutuhkan untuk mempercepat proses."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Berapa bunga pinjaman gadai BPKB mobil di DanaExpress?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Suku bunga pinjaman gadai BPKB mobil di DanaExpress kompetitif dan bervariasi tergantung pada jumlah pinjaman, tenor, dan kondisi kendaraan. Untuk informasi suku bunga terkini, silakan hubungi DanaExpress atau cek simulasi kredit di website kami."
+                }
+              }
+              // Add more questions and answers as needed
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -110,9 +249,9 @@
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img
-              src="https://www.bfi.co.id/static/images/logo-bfi.png"
-              alt="BFI Finance Logo"
-              height="40"
+              src="assets/images/Dana-white.png"
+              alt="Dana Express Logo"
+              height="90"
             />
           </a>
           <button
@@ -132,7 +271,7 @@
                 <a class="nav-link" href="#promo-info-bulan">Promo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#kenapa-bfi">Kenapa BFI</a>
+                <a class="nav-link" href="#kenapa-bfi">Kenapa DanaExpress</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#langkah-pengajuan"
@@ -156,7 +295,7 @@
 
               <li class="nav-item ms-lg-3">
                 <a
-                  href="https://wa.me/6281914438888?text=Halo%20BFI%2C%20saya%20ingin%20konsultasi%20pembiayaan."
+                  href="https://wa.me/6281914438888?text=Halo%20DanaExpress%2C%20saya%20ingin%20konsultasi%20pembiayaan."
                   class="btn btn-bfi-secondary"
                 >
                   Konsultasi
@@ -174,7 +313,7 @@
           <div class="row align-items-center">
             <div class="col-lg-7">
               <p class="text-white small mb-1">
-                BFI Dana Express Mobil - Pinjaman Jaminan BPKB Mobil
+                Pinjaman Jaminan BPKB Mobil, Truck & Pickup
               </p>
               <h1 class="display-5 fw-bold text-white mb-3">
                 Butuh dana tunai Untuk
@@ -182,7 +321,7 @@
                   >Pendidikan</span
                 >
               </h1>
-              <p class="lead text-white mb-4">BFI Finance siap membantu Anda</p>
+              <p class="lead text-white mb-4">DanaExpress siap membantu Anda</p>
               <ul class="list-unstyled mb-4 fs-5">
                 <li class="mb-2">
                   <i class="bi bi-check-circle-fill text-bfi-orange me-2"></i
@@ -215,8 +354,28 @@
               />
             </div>
             <p class="text-white">
-              BFI Finance berizin dan diawasi oleh Otoritas Jasa Keuangan
+              DanaExpress berizin dan diawasi oleh Otoritas Jasa Keuangan
             </p>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/OJK_Logo.png"
+                alt="Otoritas Jasa Keuangan"
+                height="40"
+                class="mt-2 bg-light p-1 rounded"
+              />
+              <img
+                src="assets/images/logo_appi.jpg"
+                alt="Otoritas Jasa Keuangan"
+                height="40"
+                class="mt-2 bg-light p-1 rounded"
+              />
+              <img
+                src="assets/images/logo-bfi.png"
+                alt="Otoritas Jasa Keuangan"
+                height="40"
+                class="mt-2 bg-light p-1 rounded"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -234,15 +393,13 @@
                 <!-- Desktop Image (Bootstrap's md breakpoint is 768px) -->
                 <source
                   media="(min-width: 768px)"
-                  srcset="
-                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Cashback%20BFI%20Mobile%20Mei%202025/NDFC/NDFC%20Banner%20Promo%20BFI%20Mobile%201920x702%20MEI.webp
-                  "
+                  srcset="assets/images/desk1.webp"
                 />
                 <!-- Mobile Image (acts as default and for screens < 768px) -->
                 <img
-                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Cashback%20BFI%20Mobile%20Mei%202025/NDFC/NDFC%20Banner%20Promo%20BFI%20Mobile%20600x600%20MEI.webp"
+                  src="assets/images/mob1.webp"
                   class="d-block w-100"
-                  alt="Promo BFI Finance Spesial 1 - Desktop Version"
+                  alt="Promo DanaExpress Spesial 1 - Desktop Version"
                 />
               </picture>
             </div>
@@ -253,49 +410,13 @@
                 <!-- Desktop Image -->
                 <source
                   media="(min-width: 768px)"
-                  srcset="
-                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Paket%20Superdeal%202%20(Tambahan%20Truk)/Paket%20Superdeal%202%20Mei%202025%201920X702.webp
-                  "
+                  srcset="assets/images/desk2.webp"
                 />
                 <!-- Mobile Image -->
                 <img
-                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Paket%20Superdeal%202%20(Tambahan%20Truk)/Paket%20Superdeal%202%20Mei%202025%20600-X-600.webp"
+                  src="assets/images/mob2.webp"
                   class="d-block w-100"
-                  alt="Promo BFI Finance Spesial 2"
-                />
-              </picture>
-            </div>
-
-            <!-- Slide 3 -->
-            <div>
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/MPU/Web%20Landing%20Page%20Desktop%201920x702.webp
-                  "
-                />
-                <img
-                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/MPU/Web%20Landing%20Page%20Mobile%20600x600.webp"
-                  class="d-block w-100"
-                  alt="Promo BFI Finance Spesial 3"
-                />
-              </picture>
-            </div>
-
-            <!-- Slide 4 -->
-            <div>
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Mobil%20Listrik/Web%20Landing%20Page%20Desktop%201920x702.webp
-                  "
-                />
-                <img
-                  src="https://digital-bucket.prod.bfi.co.id/assets/Banner/Promo%20Reguler%202025/NDFC/Mobil%20Listrik/Web%20Landing%20Page%20Mobile%20600x600.webp"
-                  class="d-block w-100"
-                  alt="Promo BFI Finance Spesial 4"
+                  alt="Promo DanaExpress Spesial 2"
                 />
               </picture>
             </div>
@@ -305,10 +426,10 @@
       <section id="kenapa-bfi" class="py-5 bg-light">
         <div class="container">
           <h2 class="text-center text-bfi-primary mb-3">
-            Kenapa Harus di BFI Finance?
+            Kenapa Harus di DanaExpress?
           </h2>
           <p class="text-center text-muted mb-5">
-            BFI Finance siap memenuhi kebutuhan keuangan Anda
+            DanaExpress siap memenuhi kebutuhan keuangan Anda
           </p>
 
           <div
@@ -446,8 +567,8 @@
       >
         <div class="container">
           <h2 class="mb-3 text-white">
-            Segera Dapatkan Dana Tunai dengan Pinjaman Jaminan BPKB Mobil di BFI
-            Finance
+            Segera Dapatkan Dana Tunai dengan Pinjaman Jaminan BPKB Mobil di
+            DanaExpress
           </h2>
           <p class="fs-5 mb-4">Bunga flat 0,76% per bulan</p>
           <a href="#kalkulator-angsuran" class="btn btn-bfi-orange btn-lg"
@@ -462,7 +583,7 @@
             Jaringan Cabang Luas di Seluruh Indonesia
           </h2>
           <p class="text-center text-muted mb-5 lead">
-            BFI Finance hadir lebih dekat untuk melayani Anda di berbagai
+            DanaExpress hadir lebih dekat untuk melayani Anda di berbagai
             pelosok negeri.
           </p>
 
@@ -473,7 +594,7 @@
                 <div id="map-container"></div>
               </div>
               <p class="text-center mt-2 text-muted small">
-                Jangkauan layanan BFI Finance di Indonesia.
+                Jangkauan layanan DanaExpress di Indonesia.
               </p>
             </div>
 
@@ -622,6 +743,8 @@
               <label for="vehicleType" class="form-label">Jenis Jaminan</label>
               <select id="vehicleType" name="vehicleType" class="form-select">
                 <option value="mobil" selected>Mobil</option>
+                <option value="truk">Truk</option>
+                <option value="pickup">Pickup</option>
                 <option value="motor">Motor</option>
               </select>
             </div>
@@ -731,7 +854,7 @@
             Informasi Penting yang Anda Harus Tahu
           </h2>
           <p class="text-center text-muted mb-5">
-            BFI Finance menerima pinjaman jaminan BPKB Mobil
+            DanaExpress menerima pinjaman jaminan BPKB Mobil
           </p>
 
           <div class="accordion" id="infoAccordion">
@@ -918,7 +1041,7 @@
           />
           <h2 class="mb-3 text-white">
             Dapatkan Dana Tunai dengan Pengajuan Pinjaman Jaminan BPKB Mobil di
-            BFI Finance
+            DanaExpress
           </h2>
           <p class="fs-5 mb-4">Tenor panjang sampai 48 bulan</p>
           <a href="#kalkulator-angsuran" class="btn btn-bfi-orange btn-lg"
@@ -930,7 +1053,7 @@
       <section id="skema-angsuran" class="py-5">
         <div class="container">
           <h2 class="text-center text-bfi-primary mb-5">
-            Skema Angsuran BFI Dana Express Mobil - Pinjaman Jaminan BPKB Mobil
+            Skema Angsuran DanaExpress Mobil - Pinjaman Jaminan BPKB Mobil
           </h2>
           <div class="card shadow-sm mb-4">
             <div class="card-body">
@@ -959,7 +1082,7 @@
               <p class="small text-muted mt-3">
                 *Skema angsuran hanya bersifat simulasi dan bukan persetujuan
                 pinjaman dana. Angka bisa berubah dan disesuaikan berdasarkan
-                penilaian lebih lanjut sesuai dengan kebijakan BFI Finance.
+                penilaian lebih lanjut sesuai dengan kebijakan DanaExpress.
               </p>
             </div>
           </div>
@@ -967,7 +1090,7 @@
           <div class="card shadow-sm">
             <div class="card-header bg-light">
               Hal yang Anda perlu ketahui jika pengajuan dengan jaminan BPKB
-              Mobil di BFI Finance
+              Mobil di DanaExpress
             </div>
             <div class="card-body">
               <table class="table">
@@ -1068,7 +1191,7 @@
                         <blockquote class="blockquote">
                           <p class="mb-3 fs-5">
                             “Pada tahun 2014, saya mempercayakan jaminan
-                            kendaraan-kendaraan kepada BFI Finance untuk
+                            kendaraan-kendaraan kepada DanaExpress untuk
                             mengembangkan armada dan menambah modal.”
                           </p>
                           <footer
@@ -1130,9 +1253,9 @@
                       <div class="card-body p-4">
                         <blockquote class="blockquote">
                           <p class="mb-3 fs-5">
-                            "Peran BFI buat saya, sangatlah membantu kebutuhan
-                            diwaktu saya butuh modal dan usaha saya bisa
-                            berkembang juga atas bantuan dari BFI Finance"
+                            "Peran DanaExpress buat saya, sangatlah membantu
+                            kebutuhan diwaktu saya butuh modal dan usaha saya
+                            bisa berkembang juga atas bantuan dari DanaExpress"
                           </p>
                           <footer
                             class="blockquote-footer d-flex align-items-center"
@@ -1196,14 +1319,6 @@
         >
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-dark">
-              <div class="modal-header border-0">
-                <button
-                  type="button"
-                  class="btn-close btn-close-white"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
               <div class="modal-body p-0">
                 <div class="ratio ratio-16x9">
                   <iframe
@@ -1222,6 +1337,7 @@
           </div>
         </div>
       </section>
+
       <section id="faq" class="py-5">
         <div class="container">
           <h2 class="text-center text-bfi-primary mb-5">
@@ -1329,7 +1445,7 @@
                 <div class="accordion-body">
                   Anda dapat mengajukan melalui website ini dengan mengisi form
                   online, menghubungi Call Center kami, atau datang langsung ke
-                  cabang BFI Finance terdekat.
+                  cabang DanaExpress terdekat.
                 </div>
               </div>
             </div>
@@ -1369,7 +1485,7 @@
                   aria-expanded="false"
                   aria-controls="faqCollapse6"
                 >
-                  6. Apakah BFI Finance aman?
+                  6. Apakah DanaExpress aman?
                 </button>
               </h2>
               <div
@@ -1379,8 +1495,8 @@
                 data-bs-parent="#faqAccordion"
               >
                 <div class="accordion-body">
-                  Ya, PT BFI Finance Indonesia Tbk adalah perusahaan pembiayaan
-                  yang terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK),
+                  Ya, PT DanaExpress Indonesia adalah perusahaan pembiayaan yang
+                  terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK),
                   sehingga operasional kami tunduk pada regulasi yang berlaku
                   untuk melindungi konsumen.
                 </div>
@@ -1423,26 +1539,26 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-4">
-            <h5 class="text-white mb-3">PT BFI Finance Indonesia Tbk</h5>
+            <h5 class="text-white mb-3">DanaExpress Indonesia</h5>
             <address class="small">
               BFI Tower<br />
               Sunburst CBD Lot. 1.2<br />
               Jl. Kapt. Soebijanto Djojohadikusumo<br />
               BSD City - Tangerang Selatan 15322<br /><br />
-              <p>Hotline +62 819 1443 8888</p>
-              <p>Whatsapp +62 819 1443 8888</p>
+              <div>Hotline +62 819 1443 8888</div>
+              <div>Whatsapp +62 819 1443 8888</div>
             </address>
           </div>
           <div class="col-md-4 mb-4">
             <h5 class="text-white mb-3">Pintasan Cepat</h5>
             <a
-              href="https://baim87.github.io/gadai-bpkb-mobil-bfi-finance/syarat-ketentuan.html"
+              href="/bfi/syarat-ketentuan.html"
               target="_blank"
               rel="noopener noreferrer"
               ><p class="text-white">Syarat & Ketentuan</p>
             </a>
             <a
-              href="https://baim87.github.io/gadai-bpkb-mobil-bfi-finance/privasi.html"
+              href="/bfi/privasi.html"
               target="_blank"
               rel="noopener noreferrer"
               ><p class="text-white">Kebijakan Privasi</p></a
@@ -1450,10 +1566,22 @@
           </div>
           <div class="col-md-4 mb-4">
             <p class="small">
-              BFI Finance berizin dan diawasi oleh Otoritas Jasa Keuangan
+              DanaExpress berizin dan diawasi oleh Otoritas Jasa Keuangan
             </p>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/8/83/OJK_Logo.png"
+              alt="Otoritas Jasa Keuangan"
+              height="40"
+              class="mt-2 bg-light p-1 rounded"
+            />
+            <img
+              src="assets/images/logo_appi.jpg"
+              alt="Otoritas Jasa Keuangan"
+              height="40"
+              class="mt-2 bg-light p-1 rounded"
+            />
+            <img
+              src="assets/images/logo-bfi.png"
               alt="Otoritas Jasa Keuangan"
               height="40"
               class="mt-2 bg-light p-1 rounded"
@@ -1464,7 +1592,7 @@
         <div class="row">
           <div class="col-md-6 text-center text-md-start">
             <p class="small mb-0">
-              © <span id="currentYear"></span> - PT BFI Finance Indonesia Tbk
+              © <span id="currentYear"></span> - DanaExpress
             </p>
           </div>
           <div class="col-md-6 text-center text-md-end">
@@ -1499,7 +1627,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Custom JS -->
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Slick Carousel JS CDN -->
     <script
@@ -1563,8 +1691,8 @@
         mapContainer.html("");
 
         const draw = SVG().addTo("#map-container").size("100%", "500px");
-        const mapSvgPath = "bfi/id.svg";
-        const iconPath = "bfi/pin.svg";
+        const mapSvgPath = "assets/images/id.svg";
+        const iconPath = "assets/images/pin.svg";
         const iconSize = 20;
 
         // IMPORTANT: Ensure province names here are EXACTLY as in provinsiList for DataTable
@@ -1751,8 +1879,10 @@
           });
           dataTableInstance = provinsiTableElement.DataTable({
             responsive: true,
-            paging: false, // If true, scrolling to row might need page change
+            paging: true, // If true, scrolling to row might need page change
+            search: "_INPUT_",
             searching: true,
+            searchPlaceholder: "Cari Provinsi...",
             ordering: true,
             info: false,
             // scrollY: "300px", // Example if you want internal scroll for table
