@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function redirectToWhatsAppAndThankYou() { // Renamed function
         const baseWaUrl = "https://wa.me/6281914438888";
-        let waMessage = `Halo BFI, saya ingin mengajukan pembiayaan dengan jaminan ${document.getElementById('asetDijaminkan').value}.\n`;
+        let waMessage = `Halo Adira, saya ingin mengajukan pembiayaan dengan jaminan ${document.getElementById('asetDijaminkan').value}.\n`;
         if (retrievedCalculatorData && retrievedCalculatorData.loanAmount && retrievedCalculatorData.loanTenor) {
             waMessage += `Dengan Pembiayaan Rp ${parseInt(retrievedCalculatorData.loanAmount).toLocaleString('id-ID')} tenor ${retrievedCalculatorData.loanTenor} Bulan.\n\n`;
         } else { waMessage += `\n`; }
