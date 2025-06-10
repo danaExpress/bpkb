@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - Adira Finance</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link
+      rel="icon"
+      href="https://www.adira.co.id/frontend/images/AVA-NON-MASK-100x100.png"
+      type="image/x-icon"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Assuming Poppins is linked */
+            color: #333;
+            background-color: #f8f9fa; /* Light grey background */
+        }
+        :root {
+            --bfi-primary: #004a99;
+            --bfi-orange: #f7941d;
+        }
+        .header-terms {
+            background-color: var(--bfi-primary);
+            color: white;
+            padding: 3rem 1rem;
+            margin-bottom: 2rem;
+        }
+        .header-terms h1 {
+            font-weight: 600;
+            color: white;
+        }
+        .terms-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.05);
+        }
+        .terms-content h2 {
+            color: var(--bfi-primary);
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bfi-orange);
+            font-size: 1.75rem;
+        }
+        .terms-content h2:first-of-type {
+            margin-top: 0.5rem;
+        }
+        .terms-content h3 { /* For sub-sections if any */
+            color: var(--bfi-primary);
+            font-weight: 500;
+            margin-top: 1.75rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        .terms-content p, .terms-content li {
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            color: #454545;
+            text-align: justify;
+        }
+        .terms-content ul, .terms-content ol {
+            padding-left: 1.5rem;
+        }
+        .terms-content ul li, .terms-content ol li {
+            margin-bottom: 0.5rem;
+        }
+        .terms-nav {
+            position: sticky;
+            top: 20px;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+        }
+        .terms-nav .nav-link {
+            padding: 0.35rem 1rem;
+            color: #555;
+            font-size: 0.9rem;
+            border-left: 3px solid transparent;
+        }
+        .terms-nav .nav-link.active,
+        .terms-nav .nav-link:hover {
+            color: var(--bfi-orange);
+            border-left-color: var(--bfi-orange);
+            background-color: #f8f9fa;
+        }
+        .terms-nav .nav-link.active {
+            font-weight: 500;
+        }
+        .footer-terms {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 2rem;
+        }
+        .definition-term {
+            font-weight: bold;
+            color: #333;
+        }
+        body {
+          position: relative;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11389005703">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11389005703');
+    </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#termsNav" data-bs-offset="100">
+
+    <header class="header-terms text-center">
+        <div class="container">
+            <h1>Kebijakan Privasi</h1>
+            <p class="lead mb-0">Adira Finance</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Table of Contents (Sidebar for larger screens) -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <nav id="termsNav" class="nav flex-column terms-nav bg-white p-3 rounded shadow-sm">
+                    <a class="nav-link" href="#definisi-privasi">Definisi</a>
+                    <a class="nav-link" href="#gambaran-singkat">Gambaran Singkat</a>
+                    <a class="nav-link" href="#persyaratan-umur">Persyaratan Umur</a>
+                    <a class="nav-link" href="#perolehan-informasi">Perolehan dan/atau Pengumpulan Informasi</a>
+                    <a class="nav-link" href="#penggunaan-data">Penggunaan dan Pengungkapan Informasi dan Data Pribadi</a>
+                    <a class="nav-link" href="#administrasi-data">Administrasi dan Pengelolaan Data Pribadi Anda</a>
+                    <a class="nav-link" href="#hak-akses-koreksi">Hak Untuk Mengakses dan/atau Mengkoreksi Data Pribadi</a>
+                    <a class="nav-link" href="#hak-menolak">Hak Untuk Menolak Penggunaan Data Pribadi</a>
+                    <a class="nav-link" href="#hak-menarik-persetujuan">Hak Untuk Menarik Persetujuan</a>
+                    <a class="nav-link" href="#link-situs-lain">Link Ke Situs dan/atau Aplikasi Lain</a>
+                    <a class="nav-link" href="#penyimpanan-data">Penyimpanan Data Pribadi</a>
+                    <a class="nav-link" href="#pembatasan-tanggungjawab-privasi">Pembatasan Tanggungjawab</a>
+                    <a class="nav-link" href="#gambaran-singkat-akses">Gambaran Singkat (Akses Data)</a>
+                    <a class="nav-link" href="#perubahan-kebijakan">Perubahan Terhadap Kebijakan Privasi Kami</a>
+                    <a class="nav-link" href="#pengakuan">Pengakuan</a>
+                    <a class="nav-link" href="#hukum-mengatur-privasi">Hukum Yang Mengatur</a>
+                    <a class="nav-link" href="#kontak-privasi">Kontak</a>
+                    <a class="nav-link" href="#pembaruan-info-privasi">Informasi Pembaruan</a>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9">
+                <div class="terms-container">
+                    <div class="terms-content">
+                        <!-- The content below needs to be carefully structured based on your Indonesian text -->
+                        <!-- I will start with the "Definisi" section and you can follow the pattern -->
+
+                        <section id="definisi-privasi">
+                            <h2>Definisi</h2>
+                            <p><span class="definition-term">“Kami”</span> atau <span class="definition-term">“Adira Finance”</span> adalah Adira Finance, dan adalah Perusahaan Pembiayaan Indonesia yang memiliki izin dan terdaftar serta diawasi oleh Otoritas Jasa Keuangan (“OJK”).</p>
+                            <p><span class="definition-term">“Data Pribadi”</span> berarti informasi atau data yang dapat digunakan untuk mengidentifikasi secara langsung atau tidak langsung seorang individu yang merupakan orang perseorangan atau perusahaan.</p>
+                            <p><span class="definition-term">“Layanan”</span> adalah produk pembiayaan yang dimiliki oleh Adira Finance dan ditawarkan oleh atau kepada Anda.</p>
+                            <p><span class="definition-term">“Anda”</span> berarti pengguna situs ini, ini dan/ atau pihak yang mengajukan permohonan fasilitas pembiayaan kepada Kami dan/ atau pengguna produk atau layanan Kami.</p>
+                            <p><span class="definition-term">“Kebijakan Privasi”</span> mengacu pada kebijakan privasi di situs ini.</p>
+                            <p><span class="definition-term">“Produk”</span> mengacu pada produk yang didefinisikan berdasarkan Perjanjian.</p>
+                            <p><span class="definition-term">“Konten Situs”</span> memiliki arti semua konten pada situs, secara keseluruhan atau setiap bagian, termasuk tetapi tidak terbatas pada desain, teks, gambar grafis, foto, gambar, citra, video, perangkat lunak, musik, suara dan file lain, peringkat Pembiayaan, tarif, biaya, kuotasi, data historis, grafik, statistik, artikel, informasi kontak Adira Finance, setiap informasi lain, dan pemilihan dan pengaturannya.</p>
+                            <p><span class="definition-term">“Debitur”</span> adalah orang perseorangan atau perusahaan yang berniat untuk mencari fasilitas pembiayaan kepada Adira Finance.</p>
+                            <p><span class="definition-term">“Para Pengguna”</span> mengacu pada siapa pun yang mengakses dan/atau menggunakan situs baik orang tersebut terdaftar dalam situs. Setiap syarat dan ketentuan ini berlaku untuk semua pengguna (terlepas dari status registrasi pengguna) atau bisnis dan entitas pengguna lain secara khusus, atau apabila konteksnya menentukan lain, Para Pengguna dianggap mencakup setiap bisnis atau entitas lainnya atas nama situs yang diakses oleh Pengguna lain.</p>
+                            <p><span class="definition-term">“Afiliasi”</span> adalah berkaitan dengan pihak perusahaan yang dimiliki atau dikendalikan oleh Kami, atau yang memiliki atau mengendalikan Kami.</p>
+                            <p><span class="definition-term">“Perjanjian”</span> merupakan keseluruhan dokumen yang terdiri dari:
+                                <ul>
+                                    <li>Kebijakan Privasi; dan</li>
+                                    <li>Perjanjian antara Adira Finance dengan Anda.</li>
+                                </ul>
+                            </p>
+                        </section>
+
+                        <section id="gambaran-singkat">
+                            <h2>Gambaran Singkat</h2>
+                            <ol>
+                                <li>Adira Finance berkomitmen untuk melindungi dan menghormati privasi Anda. Dengan membaca Kebijakan Privasi ini, diharapkan Anda merasa tenang dan yakin bahwa privasi Anda adalah prioritas utama bagi Kami.</li>
+                                <li>Kebijakan Privasi ini berlaku untuk semua orang dan entitas yang mengakses situs ini dan/ atau pihak yang melakukan pemanfaatan Layanan.</li>
+                                <li>Dengan mengakses situs ini dan/ melakukan pemanfaatan Layanan, dengan ini Anda mengakui bahwa Anda telah membaca dan setuju dengan Kebijakan Privasi ini.</li>
+                                <li>Kebijakan Privasi ini dirancang untuk membantu Anda memahami bagaimana Kami memperoleh, mengumpulkan, menggunakan, mengungkapkan dan/atau mengolah Data Pribadi yang telah diberikan oleh Anda kepada Kami. Mohon membaca hal-hal berikut ini dengan teliti untuk memahami pandangan dan ketentuan Kami sehubungan dengan cara Kami memperoleh, memproses, menggunakan, menyimpan, dan mengungkapkan Data Pribadi Anda, serta bagaimana Kami akan memperlakukannya.</li>
+                            </ol>
+                        </section>
+
+                        <section id="persyaratan-umur">
+                            <h2>Persyaratan Umur</h2>
+                            <p>Dalam mengakses situs dan/ atau pemanfaatan Layanan, maka Anda diwajibkan berusia minimal 21 tahun dan memiliki kapasitas hukum, hak, kuasa dan otoritas yang diperlukan untuk menyetujui Kebijakan Privasi ini. Anda mengakses situs ini, untuk melakukan pemanfaatan Layanan dan mengadakan Perjanjian dalam kapasitas Anda sendiri sebagai pribadi, ataupun memperoleh data informasi tentang Adira Finance.</p>
+                        </section>
+
+                        <section id="perolehan-informasi">
+                            <h2>Perolehan dan/atau Pengumpulan Informasi</h2>
+                            <p>Dari waktu ke waktu, Adira Finance dapat mengumpulkan informasi dan data tentang Anda, termasuk informasi dan data:</p>
+                            <ul>
+                                <li>yang diberikan oleh Anda atau oleh siapapun yang diizinkan oleh Anda;</li>
+                                <li>yang diperoleh oleh Adira Finance dari sistem informasi dan/ atau perangkat yang Anda gunakan, termasuk juga yang dapat Kami identifikasi dan kumpulkan dari hasil akses situs ini oleh Anda maupun pemanfaatan Layanan;</li>
+                                <li>yang diberikan oleh Anda atas persetujuan dari calon debitur yang berminat mengajukan permohonan fasilitas pembiayaan;</li>
+                                <li>dalam kaitannya dengan setiap kunjungan Anda ke situs ini; dan</li>
+                                <li>dari para pihak ketiga lainnya yang diizinkan oleh Anda dan sumber-sumber yang tersedia untuk umum, termasuk lembaga atau biro pemeringkat kredit, atau pihak ketiga lainnya termasuk tetapi tidak terbatas pada pihak ketiga seperti agen, vendor, pemasok dan pihak lainnya yang memberikan layanan kepada Kami atau mitra-mitra lainnya yang bekerja sama dengan Kami (selanjutnya disebut “Data Pribadi”).</li>
+                            </ul>
+                            <p>Data Pribadi sebagaimana di atas termasuk, namun tidak terbatas pada:</p>
+                            <ul>
+                                <li>Para anggota keluarga, teman, penerima manfaat, pengacara, pemegang saham, pemilik manfaat, calon debitur, kuasa, orang-orang di bawah perwaliamanatan, wali amanat, penjamin Anda, penyedia jaminan lainnya dan individu-individu lain (secara kolektif semua yang tersebut di atas adalah orang perorangan, "Individu yang Relevan");</li>
+                                <li>Setiap informasi atau data tentang Anda dan/atau Individu yang Relevan dengan Anda yang dapat mengidentifikasi Anda atau Individu yang Relevan tersebut, termasuk tetapi tidak terbatas pada nama lengkap, nama pasangan dan anak, status perkawinan, Nomor Induk Kependudukan, tanggal lahir, alamat, alamat email, nomor telepon dan/ atau telpon genggam; informasi keuangan yang meliputi nomor rekening, sumber penghasilan, jumlah penghasilan bulanan/ tahunan, jumlah pengeluaran bulanan/ tahunan, data terkait asset, data terkait jaminan; Nomor Pokok Wajib Pajak, dokumen keimigrasian, nama gadis ibu kandung, nama alias/ panggilan, agama, data biometrik; data pendidikan dan pekerjaan yang meliputi tingkat pendidikan, jenis pekerjaan, bidang usaha, jabatan, divisi, tahun mulai bekerja/ usaha, nama perusahaan/ instansi tempat bekerja/ berusaha, alamat tempat bekerja/ berusaha, status kepegawaian, nama, jabatan dan nomor telepon rekan kerja; data kontak darurat yang diberikan kepada Adira Finance dan informasi lainnya yang berkaitan dengan pengguna aplikasi dan pengajuan pembiayaan;</li>
+                                <li>Setiap informasi dan data tentang Anda dan/atau Individu yang Relevan tersebut dihasilkan dan/atau diberikan kepada Kami selama mengakses situs dan melakukan kegiatan apapun pada situs ini. Contoh: username terdaftar Anda untuk situs, hasil pencarian dan sejarah untuk produk dan layanan dalam situs ini, sejarah penyerahan produk atau pemberian layanan, catatan transaksi untuk produk dan layanan yang diberikan melalui situs ini, dan jawaban Anda atas pertanyaan-pertanyaan yang ditujukan untuk verifikasi keamanan;</li>
+                                <li>Setiap informasi dan data tentang Anda dan Individu yang Relevan tersebut dihasilkan dan/atau diberikan kepada Kami dalam perjalanan mempertahankan hubungan antara Kami dan Anda termasuk laporan tinjauan akun dan catatan korespondensi dengan Anda melalui telepon atau email;</li>
+                                <li>Setiap informasi dan data tentang Anda yang dikumpulkan dalam kaitannya dengan setiap kunjungan Anda ke situs ini termasuk:
+                                    <ul>
+                                        <li>Informasi teknis, termasuk alamat Internet Protocol (IP) yang digunakan untuk menghubungkan komputer Anda dengan internet, informasi login Anda, tipe dan versi browser, pengaturan zona waktu, tipe dan versi browser plug-in, sistem operasi, platform, dan geolokasi;</li>
+                                        <li>Informasi kunjungan situs, termasuk semua produk atau layanan yang Anda lihat atau cari; waktu respon halaman, kesalahan unduh, lama kunjungan ke laman-laman tertentu, informasi interaksi laman (seperti scrolling, klik, dan mouse-over), dan metode-metode yang digunakan untuk pindah dari laman tersebut dan nomor telepon apapun yang digunakan untuk menghubungi nomor layanan pelanggan Kami; dan</li>
+                                        <li>Informasi dan data cookies teknologi yang digunakan pada situs ini.</li>
+                                    </ul>
+                                </li>
+                                <li>Setiap informasi dan data tentang Anda yang dikumpulkan oleh Kami sehubungan dengan permohonan fasilitas pembiayaan Anda, seperti foto, rekaman video dan suara Anda serta spesimen tanda tangan digital Anda;</li>
+                                <li>Setiap informasi dan data tentang Anda yang Kami terima, apabila Anda menggunakan aplikasi lain apapun yang dioperasikan oleh Kami, Afiliasi dan anak perusahaan Kami, atau layanan lain yang Kami sediakan, atau Afiliasi dari anak perusahaan Kami; dan</li>
+                                <li>Setiap informasi dan data tentang Anda yang Kami terima dari para pihak ketiga yang dipilih, dimana pihak ketiga tersebut bertanggung jawab untuk memperoleh persetujuan dari pihak-pihak yang berwenang yang diperlukan dalam pengumpulan dan pengungkapan data pribadi kepada Kami dan akan melakukan pengolahan data pribadi dengan bergantung pada persetujuan yang telah diperoleh pihak ketiga tersebut. Dalam hal ini Kami akan memanfaatkan data pribadi untuk tujuan kerjasama dengan pihak ketiga tersebut.</li>
+                            </ul>
+                        </section>
+
+                        <section id="penggunaan-data">
+                            <h2>Penggunaan dan Pengungkapan Informasi dan Data Pribadi</h2>
+                            <p>Kami akan menjaga kerahasiaan Data Pribadi Anda. Namun demikian, dalam hal Anda mengakses situs ini dan/ atau melakukan Pemanfaatan Layanan Kami, maka Anda menyetujui bahwa Kami dapat mengolah, menganalisis dan/atau mengungkapkan, melakukan pengkinian Data Pribadi Anda dan dengan tujuan yang dianggap penting oleh Kami yang terkait dengan kegiatan usaha Kami, sebagaimana termasuk namun tidak terbatas pada hal-hal berikut:</p>
+                            <p>Dengan tujuan:</p>
+                            <ol type="a"> <!-- Using type="a" for a, b, c style list -->
+                                <li>Memberikan akses kepada Anda dan memfasilitasi penggunaan situs ini dan memastikan bahwa konten situs, produk, layanan, layanan interaktif, konten Pihak Ketiga dan situs Pihak Ketiga ditampilkan dengan cara yang paling efektif untuk Anda dan perangkat Anda;</li>
+                                <li>Memberikan kepada Anda informasi, konten situs, produk, layanan, layanan interaktif yang Anda minta dari Kami;</li>
+                                <!-- ... Add all other list items for "Dengan tujuan:" ... -->
+                                <li>Memfasilitasi transaksi aset bisnis (yang dapat berupa penggabungan, akuisisi, spinoff/pemisahan, penjaminan atau penjualan aset) yang melibatkan Adira Finance dan/atau Afiliasi Adira Finance dan/ atau pihak ketiga yang memiliki hubungan hukum dengan Adira Finance. (selanjutnya disebut “Tujuan Pengungkapan Informasi”)</li>
+                            </ol>
+                            <p>Kepada pihak-pihak tersebut di bawah ini, dengan jangka waktu penyimpanan Data Pribadi akan tunduk pada kebijakan yang ditentukan sepenuhnya oleh pihak-pihak sebagai berikut:</p>
+                            <ol type="a">
+                                <li>Para mitra usaha, pemasok dan sub-kontraktor untuk pelaksanaan setiap Perjanjian yang Kami adakan dengan mereka atau Anda;</li>
+                                <li>Para pengiklan dan jaringan-jaringan iklan yang memerlukan data untuk memilih dan menyediakan iklan yang relevan kepada Anda dan orang lain;</li>
+                                <!-- ... Add all other list items for "Kepada pihak-pihak..." ... -->
+                                <li>Orang atau entitas atau mitra Kami yang kepada orang atau entitas tersebut Adira Finance berkewajiban atau disyaratkan untuk melakukan pengungkapan sesuai dengan proses hukum atau berdasarkan persyaratan dari hukum, peraturan, perintah pengadilan di dalam dan luar negeri atau perjanjian yang diadakan, yang mengikat atau berlaku untuk Adira Finance dan setiap otoritas pemerintah, di dalam atau luar negeri, atau antara dua otoritas pemerintah atau lebih di dalam atau di luar negeri, atau setiap pengungkapan berdasarkan dan untuk tujuan pedoman atau petunjuk yang diberikan atau dikeluarkan oleh badan penegak hukum, regulasi, badan pemerintah, otoritas pajak, lembaga penegak hukum atau otoritas-otoritas lain, atau peraturan otonom dari badan industri atau asosiasi dari penyedia jasa keuangan atau bursa efek yang disyaratkan atau diharapkan untuk dipenuhi oleh Adira Finance, atau setiap pengungkapan sesuai dengan setiap Perjanjian atau komitmen lain dari Adira Finance dengan lembaga hukum, regulasi, badan pemerintah, pajak, lembaga penegak hukum atau otoritas-otoritas lain, semua yang mungkin di dalam atau di luar Indonesia termasuk pengungkapan ke sidang pengadilan, pengadilan tribunal, dan/atau lembaga hukum, regulasi, pajak dan badan pemerintah, terlepas apakah proses hukum, kewajiban, permintaan, persyaratan, perjanjian atau pedoman tersebut saat ini masih ada atau dibuat di masa mendatang.</li>
+                            </ol>
+                        </section>
+
+                        <section id="administrasi-data">
+                            <h2>Administrasi dan Pengelolaan Data Pribadi Anda</h2>
+                            <!-- ... Content ... -->
+                        </section>
+
+                        <section id="hak-akses-koreksi">
+                            <h2>Hak Untuk Mengakses dan/ atau Mengkoreksi Data Pribadi</h2>
+                            <p>Dengan pemberitahuan melalui media sebagaimana dimaksud pada bagian Kontak pada Kebijakan Privasi ini, Anda dapat meminta kepada Kami untuk mengakses dan/ atau mengkoreksi Data Pribadi yang berada dalam kepemilikan dan penguasaan Kami. Namun demikian, untuk alasan yang Kami anggap tidak relevan, tidak serius atau menyulitkan, Kami berhak menolak permintaan Anda untuk mengakses dan/ atau mengkoreksi sebagian atau semua Data Pribadi Anda yang Kami miliki atau kuasai.</p>
+                        </section>
+
+                        <section id="hak-menolak">
+                             <h2>Hak Untuk Menolak Penggunaan Data Pribadi</h2>
+                             <p>Dalam hal terdapat Data Pribadi dari pengguna yang ternyata masuk dalam kategori anak di bawah 21 tahun atau penyandang disabilitas, maka orang tua atau wali dari anak bawah umur atau penyandang disabilitas tersebut dapat meminta Adira Finance, untuk menghapus Data Pribadi anak atau penyandang disabilitas tersebut dengan mengirimkan permohonan kepada Adira Finance.</p>
+                        </section>
+
+                        <section id="hak-menarik-persetujuan">
+                            <h2>Hak Untuk Menarik Persetujuan</h2>
+                            <p>Kecuali ditentukan lain oleh peraturan perundang-undangan dan apabila dianggap relevan, serius dan tidak menyulitkan oleh Kami, Anda dapat melakukan penarikan persetujuan Anda atas pengumpulan, penggunaan, pengungkapan, pengolahan dan/ atau pemusnahan Data Pribadi Anda persyaratan dan tata caranya sesuai dengan peraturan perundang-undangan yang secara khusus mengatur mengenai hal tersebut, dengan pemberitahuan tertulis kepada Kami.</p>
+                        </section>
+
+                        <section id="link-situs-lain">
+                            <h2>Link Ke Situs dan/ atau Aplikasi Lain</h2>
+                            <p>Situs ini dapat, dari waktu ke waktu, berisi link ke Situs-Situs dan/ atau aplikasi Pihak Ketiga dan situs web dari jaringan mitra, pengiklan, Afiliasi atau anak perusahaan Kami. Jika Anda mengikuti suatu link ke salah satu situs web atau aplikasi tersebut, perlu Anda ketahui bahwa situs web atau aplikasi tersebut dapat memiliki atau tidak memiliki kebijakan privasi mereka sendiri dan Kami tidak menerima tanggung jawab atau kewajiban atas kebijakan-kebijakan ini atau tidak adanya kebijakan-kebijakan ini. Bacalah kebijakan ini sebelum Anda menyerahkan informasi apapun termasuk Data Pribadi Anda pada situs web atau aplikasi tersebut.</p>
+                        </section>
+
+                        <section id="penyimpanan-data">
+                            <h2>Penyimpanan Data Pribadi</h2>
+                            <p>Data Pribadi Anda hanya akan disimpan selama diperlukan untuk memenuhi tujuan perolehan dan/atau pengumpulannya, paling sedikit 10 tahun atau jangka waktu lain sesuai ketentuan hukum yang berlaku di sektor perusahaan dan/ atau pembiayaan, terhitung sejak terselesaikannya hubungan Anda dengan Kami atau selama penyimpanan tersebut diperlukan atau diperbolehkan oleh peraturan perundang-undangan yang berlaku. Kami akan berhenti menyimpan Data Pribadi, atau menghapus cara-cara yang dapat digunakan untuk menghubungkan Data Pribadi tersebut dengan Anda, segera setelah Data Pribadi tersebut tidak lagi dibutuhkan untuk disimpan dan penyimpanan tidak lagi diperlukan untuk tujuan bisnis atau secara hukum.</p>
+                        </section>
+
+                        <section id="pembatasan-tanggungjawab-privasi">
+                            <h2>Pembatasan Tanggungjawab</h2>
+                            <p>Anda dengan ini membebaskan dan/ atau melepaskan Kami atau Afiliasi Kami dari segala tuntutan, klaim dan/ atau gugatan yang timbul sehubungan dengan, namun tidak terbatas pada: (i) pemberian akses, perolehan, pengumpulan, pengolahan, penggunaan, analisis, pendistribusian, pengungkapan dan pengiriman Data Pribadi Anda sebagaimana diatur dalam Kebijakan Privasi ini atau untuk hal lainnya yang telah mendapatkan persetujuan Anda dari waktu ke waktu, (ii) informasi tidak tepat dan tidak akurat yang Anda berikan kepada Kami atau Afiliasi Kami, (iii) tidak dilakukannya pengkinian data (update) atas perubahan data atau Data Pribadi Anda yang digunakan untuk mengakses situs ini dan/atau menggunakan produk atau layanan Kami.</p>
+                        </section>
+
+                        <section id="gambaran-singkat-akses">
+                            <h2>Gambaran Singkat (Akses Data)</h2> <!-- Re-using Gambaran Singkat, added context -->
+                            <ol>
+                                <li>Anda memiliki hak untuk meminta dari Kami Data Pribadi tentang Anda yang disimpan oleh Adira Finance. Jika Anda ingin mengakses, memutakhirkan atau mengubah setiap informasi yang Anda berikan kepada Kami, hubungi Adira Finance untuk mendapatkan bantuan dengan mengacu pada ketentuan pada butir 5 di atas.</li>
+                                <li>Karena alasan pada butir 5 di atas dan dalam keadaan-keadaan luar biasa atau karena dilarang oleh peraturan perundang-undangan, Adira Finance dapat menolak akses Anda ke Data Pribadi Anda. Keadaan-keadaan luar biasa tersebut termasuk tetapi tidak terbatas pada apabila:
+                                    <ul>
+                                        <li>Otoritas yang melakukan penyelidikan atau lembaga pemerintah berkeberatan terhadap pemenuhan permintaan pelanggan oleh Adira Finance;</li>
+                                        <li>Informasi dapat, dalam pelaksanaan kewenangan dan/atau penilaian yang wajar dari Adira Finance, mempengaruhi hidup atau keamanan seorang individu; dan</li>
+                                        <li>Data dikumpulkan sehubungan dengan investigasi terhadap pelanggaran Perjanjian, kecurigaan terhadap aktivitas-aktivitas penipuan atau pelanggaran hukum.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section id="perubahan-kebijakan">
+                            <h2>Perubahan Terhadap Kebijakan Privasi Kami</h2>
+                            <p>Setiap perubahan yang Kami lakukan terhadap Kebijakan Privasi Kami di masa mendatang akan diposting pada halaman ini dan, jika perlu, diberitahukan kepada Anda. Harap sering memeriksa kembali untuk melihat pemutakhiran (update) atau perubahan terhadap kebijakan privasi Kami.</p>
+                        </section>
+
+                        <section id="pengakuan">
+                            <h2>Pengakuan</h2>
+                            <ol>
+                                <li>Anda mengakui bahwa apabila Anda tidak memberikan informasi atau data yang relevan atau menarik persetujuan sehubungan dengan pengumpulan, penggunaan dan/atau pengungkapan informasi atau data yang relevan sebagaimana dijelaskan dalam Kebijakan Privasi ini, Adira Finance berpeluang untuk tidak melanjutkan atau membuat atau memberikan setiap produk dan layanan, atau terus mengizinkan Anda menggunakan atau mengakses aplikasi, konten aplikasi, produk, layanan atau layanan Interaktif Kami. Adira Finance akan memberitahu Anda tentang konsekuensi dari penarikan persetujuan tersebut seandainya Anda memberitahukan kepada Kami tentang keinginan Anda untuk menarik persetujuan Anda;</li>
+                                <li>Anda menjamin kepada Adira Finance bahwa apabila Anda atau kuasa Anda bertanggung jawab atas penyediaan setiap informasi atau data berkaitan dengan siapapun kepada Adira Finance, atau menyediakan setiap informasi atau data tersebut kepada Adira Finance, Anda telah memberitahukan dan mendapatkan persetujuan dari orang (-orang) yang bersangkutan untuk mengizinkan Adira Finance mengumpulkan, menggunakan, dan/atau mengungkapkan informasi berkaitan dengan orang (-orang) yang bersangkutan sebagaimana dijelaskan dalam Kebijakan Privasi ini;</li>
+                                <li>Anda setuju bahwa Anda telah memperoleh persetujuan dari semua Individu yang Relevan tersebut sehingga setiap informasi atau data dari Individu yang Relevan dapat diolah, disimpan, ditransfer atau diungkapkan sebagaimana yang dianggap oleh Adira Finance sesuai dengan hukum yang berlaku untuk tujuan yang diizinkan. Data tersebut juga dapat diolah, disimpan, ditransfer atau diungkapkan sesuai dengan hukum dan praktik, aturan dan peraturan setempat (termasuk setiap permintaan berdasarkan peraturan, tindakan dan perintah pemerintah); dan</li>
+                                <li>Anda setuju bahwa Adira Finance dapat mengubah dan memodifikasi Kebijakan Privasi ini dari waktu ke waktu dan bahwa setelah pemberitahuan kepada Anda terhadap Kebijakan Privasi yang diubah tersebut, konten-konten daripadanya sama halnya akan mengubah, meragamkan dan melengkapi perjanjian-perjanjian dan/atau pengaturan-pengaturan tersebut di atas akan berlaku sejak tanggal yang ditetapkan dalam Kebijakan Privasi yang diubah tersebut, dan tanpa mengurangi hal tersebut di atas, akses/penggunaan atau kelanjutan akses/penggunaan Anda atas aplikasi, konten aplikasi, produk, layanan, layanan interaktif setelah perubahan tersebut juga harus dianggap sebagai penerimaan dan persetujuan Anda pada hal-hal tersebut.</li>
+                            </ol>
+                            <p>Anda mengakui bahwa Anda telah membaca dan memahami Peraturan data pribadi ini dan menyetujui pengumpulan, penggunaan, pengolahan dan penyimpanan data diri pribadi sebagaimana diatur dalam Kebijakan Privasi ini.</p>
+                        </section>
+
+                        <section id="hukum-mengatur-privasi">
+                            <h2>Hukum Yang Mengatur</h2>
+                            <p>Kebijakan Privasi ini diatur oleh dan ditafsirkan menurut hukum Negara Republik Indonesia. Setiap dan seluruh permasalahan yang timbul sehubungan dengan pelaksanaan Kebijakan Privasi ini akan diselesaikan melalui Pengadilan Negeri Tangerang.</p>
+                        </section>
+
+                        <section id="kontak-privasi">
+                            <h2>Kontak</h2>
+                            <p>Jika Anda memiliki pertanyaan lebih lanjut tentang Kebijakan Privasi dan keamanan informasi Anda dan ingin memperbarui data Anda, silakan hubungi Kami melalui email customercare@adira.co.id atau telepon 0819 1443 8888.</p>
+                        </section>
+
+                        <hr class="my-5">
+                        <section id="pembaruan-info-privasi">
+                            <p class="text-muted small fst-italic">Terakhir diperbarui tanggal 30 Januari 2025</p>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-terms">
+        <div class="container">
+            © <span id="currentYear"></span> Adira Finance. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Same JavaScript as the Terms and Conditions page for Scrollspy and smooth scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const termsNav = document.getElementById('termsNav');
+            if (termsNav) {
+                try {
+                    new bootstrap.ScrollSpy(document.body, {
+                        target: '#termsNav',
+                        offset: 120 // Adjust this offset based on your fixed navbar height
+                    });
+                } catch (e) {
+                    console.warn("ScrollSpy initialization failed. Ensure Bootstrap JS is loaded and target element exists.", e);
+                }
+            }
+
+            document.querySelectorAll('#termsNav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = 100; // Adjust if you have a fixed header
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                    }
+                });
+            });
+
+            const currentYearSpan = document.getElementById('currentYear');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
