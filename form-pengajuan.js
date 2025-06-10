@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Redirect to thank you page after a short delay,
         // allowing WhatsApp tab to open.
         setTimeout(() => {
-            window.location.href = 'terima-kasih.html'; // Ensure this path is correct
+            window.location.href = 'terima-kasih'; // Ensure this path is correct
         }, 1000); // 1 second delay
 
         // Clean up after process initiated

@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
             };
 
             localStorage.setItem('calculatorSubmissionData', JSON.stringify(submissionData));
-            window.location.href = './form-pengajuan.html';
+            window.location.href = './form-pengajuan';
         });
     }
 });
